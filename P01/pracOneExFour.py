@@ -4,7 +4,6 @@ import math
 
 def main():
     image = cv.imread("./in_images/prac01ex04img01.png", cv.IMREAD_COLOR)
-    print(image[0:0, 0:0])
     rows, cols, color = image.shape
     p1, p2, p0 = 0, 0, (0,0)
     # FIND HORIZONTAL POINT ONE.
