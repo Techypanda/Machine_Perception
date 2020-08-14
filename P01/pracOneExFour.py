@@ -10,11 +10,12 @@ def main():
     for i in range(0,image.shape[1]):
         if (image[i,0] != np.array([0,0,0])).all():
             p1 = (i, 0)
+            break
     # FIND VERTICAL
     for i in range(0, image.shape[0]):
         if (image[0,i] != np.array([0,0,0])).all():
             p2 = (0, i)
-
+            break
     d = int(round(math.degrees(math.atan(p1[0] / p2[1]))))
     transformMatrix = cv.getRotationMatrix2D((rows/2, cols/2), d, 1)
     rotatedImage = cv.warpAffine(image, transformMatrix, (cols, rows))
