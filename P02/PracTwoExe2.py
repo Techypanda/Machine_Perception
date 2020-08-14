@@ -7,8 +7,6 @@ class Kernel:
         self.kernels = []
         for kernel in args:
             kernel = np.array(kernel, np.float32)
-            #kernel = np.flip(kernel, 0) # Flip vertically
-            #kernel = np.flip(kernel, 1) # Flip Horizontally DOESNT WORK... TRANSPOSE TIME T_T
             kernel = np.transpose(kernel)
             self.kernels.append(kernel)
     def __str__(self):
