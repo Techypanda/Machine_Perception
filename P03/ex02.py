@@ -1,13 +1,13 @@
 import cv2 as cv
 import numpy as np
-from Kernel import *
+import Kernel
 
 # Global Time!!! OOSE CONCEPTS OUT DA WINDOW BB
 thresholdOne = 100
 thresholdTwo = 200
 window = "Canny Edge Detection"
-Prewit = Kernel([[-1 , 0, 1],[-1, 0, 1],[-1, 0, 1]],[[-1, -1, -1],[0, 0, 0],[1, 1, 1]])
-Sobel = Kernel([[-1, 0, 1],[-2, 0, 2],[-1, 0, 1]],[[-1, -2, -1],[0,0,0],[1,2,1]])
+#Prewit = Kernel([[-1 , 0, 1],[-1, 0, 1],[-1, 0, 1]],[[-1, -1, -1],[0, 0, 0],[1, 1, 1]])
+#Sobel = Kernel([[-1, 0, 1],[-2, 0, 2],[-1, 0, 1]],[[-1, -2, -1],[0,0,0],[1,2,1]])
 
 def thresholdChangeO(val):
     global image, thresholdOne, thresholdTwo
@@ -24,11 +24,14 @@ def thresholdChangeT(val):
 def cannyEdgeDetection():
     global image, thresholdOne, thresholdTwo
     image = cv.imread("./in_images/prac03ex02img01.jpg", cv.IMREAD_UNCHANGED)
-    PrewitX = cv.filter2D(image, -1, Prewit.kernels[0])
-    PrewitY = cv.filter2D(image, -1, Prewit.kernels[1])
-    SobelX = cv.filter2D(image, -1, Sobel.kernels[0])
-    SobelY = cv.filter2D(image, -1, Sobel.kernels[1])
-    ### To obtain the gradient you would iterate each pixel ? of x n y ### 
+    Sobels = Kernel.applyKernel(image, "sobel")
+    '''
+    Accumulator Array: A 2D Table where x is r, and y is theta, put the values in here, poll how many are same and that changes the intensity
+
+    For each pixel in edges detected (Canny Output) you need to draw a mathematical line through this pixel at every theta i.e (0 - 360) and record the shortest distance of origin to that point (r), record the r and theta for each pixel in the accumulator array.
+
+    You can then visualise the Accumulator Array based off the intensity.
+    '''
     display = cv.Canny(image, thresholdOne, thresholdTwo)
     cv.imshow(window, display)
     cv.createTrackbar("Threshold One", window, thresholdOne, 1000, thresholdChangeO)
