@@ -13,7 +13,7 @@ def MSER(image):
   cv.waitKey()
 
 def main():
-  MSER("./in_images/prac03ex04img02.png")
+  MSER("./in_images/v742lscv89z41.jpg")
 
 if __name__ == "__main__":
   main()

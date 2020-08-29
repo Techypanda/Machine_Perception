@@ -22,6 +22,4 @@ def applyKernel(image, kernelName):
     if kernelName.upper() == 'SOBEL' or kernelName.upper() == 'SOBELS':
         x = cv.filter2D(image.copy(), -1, __SOBELS['x'])
         y = cv.filter2D(image.copy(), -1, __SOBELS['y'])
-        cv.imshow("x", x)
-        cv.imshow("y", y)
-        return np.sqrt(np.square(x) + np.square(y)).astype(np.float32)
+        return np.hypot(x, y).astype(np.float32)

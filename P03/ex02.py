@@ -23,8 +23,10 @@ def thresholdChangeT(val):
 
 def cannyEdgeDetection():
     global image, thresholdOne, thresholdTwo
-    image = cv.imread("./in_images/prac03ex02img01.jpg", cv.IMREAD_UNCHANGED)
-    Sobels = Kernel.applyKernel(image, "sobel")
+    image = cv.imread("./in_images/prac03ex02img01.jpg", cv.IMREAD_GRAYSCALE)
+    cv.imshow("original", image)
+    #Sobels = Kernel.applyKernel(image, "sobel") # doesnt work lol. why no idea and i dont care
+    #cv.imshow("Sobels", Sobels)
     display = cv.Canny(image, thresholdOne, thresholdTwo)
     cv.imshow(window, display)
     cv.createTrackbar("Threshold One", window, thresholdOne, 1000, thresholdChangeO)
