@@ -3,8 +3,8 @@ import numpy as np
 import extraction as ext
 import random
 
-img = cv.imread('./in_images/prac04ex02img01.png', cv.IMREAD_GRAYSCALE)
-clr = cv.imread('./in_images/prac04ex02img01.png', cv.IMREAD_COLOR)
+img = cv.imread('./in_images/v1f9ppk07wu21.jpg', cv.IMREAD_GRAYSCALE)
+clr = cv.imread('./in_images/v1f9ppk07wu21.jpg', cv.IMREAD_COLOR)
 
 # Otsu's thresholding
 otsRet, thr = cv.threshold(img,0,255, cv.THRESH_BINARY + cv.THRESH_OTSU)
