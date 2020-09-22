@@ -20,32 +20,30 @@ dugongn90 = cv.rotate(dugong, cv.ROTATE_90_COUNTERCLOCKWISE)
 dugong180 = cv.rotate(dugong, cv.ROTATE_180)
 cv.imshow('card', card)
 cv.imshow('dugong', dugong)
-cardHists = [
+cardHog = [
   (hog.compute(card,winStride,padding,locations), './out_files/task_2/rotation/noRotation-card-hog.png'), (hog.compute(card90,winStride,padding,locations), './out_files/task_2/rotation/90deg-card-hog.png'), 
   (hog.compute(cardn90,winStride,padding,locations), './out_files/task_2/rotation/n90deg-card-hog.png'), (hog.compute(card180,winStride,padding,locations), './out_files/task_2/rotation/180deg-card-hog.png')
 ]
-dugongHists = [
+dugongHog = [
   (hog.compute(dugong,winStride,padding,locations), './out_files/task_2/rotation/noRotation-dugong-hog.png'), (hog.compute(dugong90,winStride,padding,locations), './out_files/task_2/rotation/90deg-dugong-hog.png'),
   (hog.compute(dugongn90,winStride,padding,locations), './out_files/task_2/rotation/n90-dugong-hog.png'), (hog.compute(dugong180,winStride,padding,locations), './out_files/task_2/rotation/180deg-dugong-hog.png')
 ]
-for hist in cardHists + dugongHists:
-  plt.plot(hist[0])
-  plt.savefig(hist[1])
-  plt.clf()
- 
+for results in cardHog + dugongHog:
+  print(cv.HOGDescriptor.getDescriptorSize(results)) # length wtf.
+  
 scaledDugongs = [dugong, utils.placeOn(utils.scaleImg(dugong, 0.50, 0.50), 64, 64), utils.placeOn(utils.scaleImg(dugong, 0.25, 0.25), 64, 64), utils.placeOn(utils.scaleImg(dugong, 0.50, 1), 64, 64), utils.placeOn(utils.scaleImg(dugong, 1, 0.50), 64, 64)]
 scaledCards = [card, utils.placeOn(utils.scaleImg(card, 0.50, 0.50), 64, 64), utils.placeOn(utils.scaleImg(card, 0.25, 0.25), 64, 64), utils.placeOn(utils.scaleImg(card, 0.50, 1), 64, 64), utils.placeOn(utils.scaleImg(card, 1, 0.50), 64, 64)]
-cardHists = [
+cardHog = [
   (hog.compute(card,winStride,padding,locations), './out_files/task_2/scaled/noScale-card-hog.png'), (hog.compute(scaledCards[1],winStride,padding,locations), './out_files/task_2/scaled/50w50h-card-hog.png'), 
   (hog.compute(scaledCards[2],winStride,padding,locations), './out_files/task_2/scaled/25w25h-card-hog.png'), (hog.compute(scaledCards[3],winStride,padding,locations), './out_files/task_2/scaled/50w1h-card-hog.png'),
   (hog.compute(scaledCards[4],winStride,padding,locations), './out_files/task_2/scaled/1w50h-card-hog.png')
 ]
-dugongHists = [
+dugongHog = [
   (hog.compute(dugong,winStride,padding,locations), './out_files/task_2/scaled/noScale-dugong-hog.png'), (hog.compute(scaledDugongs[1],winStride,padding,locations), './out_files/task_2/scaled/50w50h-dugong-hog.png'), 
   (hog.compute(scaledDugongs[2],winStride,padding,locations), './out_files/task_2/scaled/25w25h-dugong-hog.png'), (hog.compute(scaledDugongs[3],winStride,padding,locations), './out_files/task_2/scaled/50w1h-dugong-hog.png'),
   (hog.compute(scaledDugongs[4],winStride,padding,locations), './out_files/task_2/scaled/1w50h-dugong-hog.png')
 ]
-for hist in cardHists + dugongHists:
+for results in cardHog + dugongHog:
   plt.plot(hist[0])
   plt.savefig(hist[1])
   plt.clf()
