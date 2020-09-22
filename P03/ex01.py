@@ -9,7 +9,8 @@ def harrisCorner():
   ksize = int(input())
   k = 0.05 # Constant In Range [0.04 - 0.06]
   for i in range(1, 4):
-    image = cv.imread("./in_images/prac03ex01img0{}.png".format(i), cv.IMREAD_GRAYSCALE)
+    #image = cv.imread("./in_images/prac03ex01img0{}.png".format(i), cv.IMREAD_GRAYSCALE)
+    image = cv.imread("./in_images/diamond2.png", cv.IMREAD_GRAYSCALE)
     cornerDetected = cv.cornerHarris(image, 5, ksize, k)
     cv.imshow("Original", image)
     cv.imshow("Harris Corner Detection", cornerDetected)

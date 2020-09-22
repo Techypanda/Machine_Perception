@@ -14,7 +14,7 @@ for imageSource in imageSources: # ROTATION
     'degn90': [cv.rotate(cv.imread(imageSource, cv.IMREAD_COLOR), cv.ROTATE_90_COUNTERCLOCKWISE)],
     'flipped': [cv.flip(cv.imread(imageSource, cv.IMREAD_COLOR), 0)]
   }
-  for image in images.values():
+  for image in images.values(): # Hist
     image.append(utils.calcHist(image[0]))
   cv.imwrite('./out_files/rotation/{0}Neutral Hist.png'.format(title[imageSource]), np.concatenate((images['neutral'][0], images['neutral'][1]), axis=1))
   cv.imwrite('./out_files/rotation/{0}Deg 45 Hist.png'.format(title[imageSource]), np.concatenate((images['deg45'][0], images['deg45'][1]), axis=1))
@@ -22,7 +22,7 @@ for imageSource in imageSources: # ROTATION
   cv.imwrite('./out_files/rotation/{0}Deg 90 Hist.png'.format(title[imageSource]), np.concatenate((images['deg90'][0], images['deg90'][1]), axis=1))
   cv.imwrite('./out_files/rotation/{0}Deg -90 Hist.png'.format(title[imageSource]), np.concatenate((images['degn90'][0], images['degn90'][1]), axis=1))
   cv.imwrite('./out_files/rotation/{0}180 Deg Hist.png'.format(title[imageSource]), np.concatenate((images['flipped'][0], images['flipped'][1]), axis=1)) # Rotationally Variant
-  for image in images.values():
+  for image in images.values(): # Corner Detection
     cpy = image[0].copy()
     cpy[cv.cornerHarris(cv.cvtColor(image[0], cv.COLOR_BGR2GRAY), 5, 9, 0.05)>0.01*cpy.max()]=[0,0,255]
     image.append(cpy)
@@ -32,6 +32,16 @@ for imageSource in imageSources: # ROTATION
   cv.imwrite('./out_files/rotation/{0}Deg 90 Corners.png'.format(title[imageSource]), images['deg90'][2])
   cv.imwrite('./out_files/rotation/{0}Deg -90 Corners.png'.format(title[imageSource]), images['degn90'][2])
   cv.imwrite('./out_files/rotation/{0}180 Deg Corners.png'.format(title[imageSource]), images['flipped'][2]) # Rotationally Invariant
+  for image in images.values(): # SIFT
+    SIFT = cv.xfeatures2d.SIFT_create()
+    kp, des = SIFT.detectAndCompute(cv.cvtColor(image[0], cv.COLOR_BGR2GRAY), None)
+    image.append(cv.drawKeypoints(cv.cvtColor(image[0], cv.COLOR_BGR2GRAY), kp, image[0]))
+  cv.imwrite('./out_files/rotation/{0}Neutral SIFT.png'.format(title[imageSource]), images['neutral'][3])
+  cv.imwrite('./out_files/rotation/{0}Deg 45 SIFT.png'.format(title[imageSource]), images['deg45'][3])
+  cv.imwrite('./out_files/rotation/{0}Deg -45 SIFT.png'.format(title[imageSource]), images['degn45'][3])
+  cv.imwrite('./out_files/rotation/{0}Deg 90 SIFT.png'.format(title[imageSource]), images['deg90'][3])
+  cv.imwrite('./out_files/rotation/{0}Deg -90 SIFT.png'.format(title[imageSource]), images['degn90'][3])
+  cv.imwrite('./out_files/rotation/{0}180 Deg SIFT.png'.format(title[imageSource]), images['flipped'][3]) # Rotationally Invariant
 
 for imageSource in imageSources: # Scaling
   images = { 
@@ -59,3 +69,12 @@ for imageSource in imageSources: # Scaling
   cv.imwrite('./out_files/scale/{0}50 Corners.png'.format(title[imageSource]), images['50%'][2])
   cv.imwrite('./out_files/scale/{0}widthReduced Corners.png'.format(title[imageSource]), images['widthReduced'][2])
   cv.imwrite('./out_files/scale/{0}heightReduced Corners.png'.format(title[imageSource]), images['heightReduced'][2]) # Scale Invariant
+  for image in images.values(): # SIFT
+    SIFT = cv.xfeatures2d.SIFT_create()
+    kp, des = SIFT.detectAndCompute(cv.cvtColor(image[0], cv.COLOR_BGR2GRAY), None)
+    image.append(cv.drawKeypoints(cv.cvtColor(image[0], cv.COLOR_BGR2GRAY), kp, image[0]))
+  cv.imwrite('./out_files/scale/{0}Neutral SIFT.png'.format(title[imageSource]), images['neutral'][3])
+  cv.imwrite('./out_files/scale/{0}75 SIFT.png'.format(title[imageSource]), images['75%'][3])
+  cv.imwrite('./out_files/scale/{0}50 SIFT.png'.format(title[imageSource]), images['50%'][3])
+  cv.imwrite('./out_files/scale/{0}widthReduced SIFT.png'.format(title[imageSource]), images['widthReduced'][3])
+  cv.imwrite('./out_files/scale/{0}heightReduced SIFT.png'.format(title[imageSource]), images['heightReduced'][3]) # Mostly Scale Invariant
