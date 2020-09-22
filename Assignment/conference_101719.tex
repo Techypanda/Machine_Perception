@@ -29,7 +29,20 @@ Perth, Western Australia \\
 Within this report I investigate the Harris Corner Detection, SIFT Feature Extraction, Image Histograms, LBP, HOG and Image Segmentation with K-means.
 \end{abstract}
 
-\section{Image histogram, Harris corners and SIFT key points}
+\section{Image Histograms}
+\subsection{Variance/Invariance Of Images Based Off Histograms}
+In this section I investigate the variance of histograms of images based on rotation and scaling of the source image.
+\subsection{Image Scaling}
+To test how histograms responded to image scaling I first generate test data based off the provided images (diamond2.png and Dugong.jpg), for each image I generate a 50% size, 75% size, a 50% width and 100% height and a 50% height and 100% width version.
+I then ran these images through a opencv calculateHist function which will return a RGB histogram showing the RGB levels for each x of image.
+Below you can see the results.
+\begin{figure}[htbp]
+\centerline{\includegraphics{./figures/diamond50 Hist.png}}
+\caption{Example of a figure caption.}
+\label{fig}
+\end{figure}
+
+\section{blah blah}
 \subsection{Variance/Invariance, against image scaling and rotations}
 Explain the variance/invariance, against image scaling and rotations, of image histograms,
 corners detected by Harris corner detectors, and key points detected by SIFT feature detectors
