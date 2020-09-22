@@ -31,3 +31,8 @@ def calcHist(img, filename):
     plt.xlim([0, 256])
   plt.savefig(filename)
   plt.clf()
+
+def placeOn(img, desiredWidth, desiredHeight):
+  canvas = np.zeros((desiredHeight, desiredWidth), dtype=np.uint8)
+  canvas[0:img.shape[0], 0:img.shape[1]] = img
+  return canvas
