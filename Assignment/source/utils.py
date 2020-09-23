@@ -56,8 +56,8 @@ def concon(arr):
               if arr[y-1][x] != 0:
                 if arr[y-1][x] != arr[y][x-1]:
                   if conflicts.get(arr[y-1][x]) != None: #TOP
-                    conflicts[arr[y-1][x]].add(arr[y][x-1]) # add left
-                    conflicts[arr[y-1][x]].add(arr[y-1][x]) # add up
+                    conflicts[arr[y-1][x]].add(arr[y][x-1]) # add left to up
+                    conflicts[arr[y-1][x]].add(arr[y-1][x]) # add up to left
                   else:
                     z = set()
                     z.add(arr[y][x-1]) # add left
@@ -74,6 +74,11 @@ def concon(arr):
                   # merge the sets.
                   conflicts[arr[y-1][x]].update(conflicts[arr[y][x-1]])
                   conflicts[arr[y][x-1]].update(conflicts[arr[y-1][x]])
+                  # UPDATE THEIR CHILDREN
+                  for child in conflicts[arr[y-1][x]]:
+                    conflicts[child].update(conflicts[arr[y-1][x]])
+                  for child in conflicts[arr[y][x-1]]:
+                    conflicts[child].update(conflicts[arr[y][x-1]])
                 arr[y][x] = arr[y][x-1]
               else:
                 arr[y][x] = arr[y][x-1]
