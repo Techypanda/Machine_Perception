@@ -1,0 +1,4 @@
+No Rotation = Transformation is invariant as distance is relatively small compared to norm of H0
+90 Degree Rotation = Transformation is invariant as distance is relatively small compared to norm of H0
+-90 Degree Rotation = Transformation is invariant as distance is relatively small compared to norm of H0
+180 Degree Rotation = Transformation is invariant as distance is relatively small compared to norm of H0

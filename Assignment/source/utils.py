@@ -44,6 +44,14 @@ def toFile(arr, filename):
         file.write(str(arr[y][x]))
       file.write('\n')
 
+def hogVariation(H0, H1):
+  distance = cv.norm(H0 - H1)
+  if (distance <= cv.norm(H0)):
+    return "Transformation is invariant as distance is relatively small compared to norm of H0"
+  else:
+    return "Transformation is variant as distance is not relatively small compared to norm of H0"
+
+
 def concon(arr):
   conflicts = {} # dict
   cc = 0
