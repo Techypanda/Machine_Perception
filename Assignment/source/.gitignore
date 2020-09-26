@@ -1,0 +1,5 @@
+out_files/rotation/*
+out_files/scale/*
+out_files/task_2/*
+out_files/task_3/*
+__pycache__
