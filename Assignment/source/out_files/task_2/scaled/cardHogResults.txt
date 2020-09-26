@@ -1,5 +1,0 @@
-No Scale = Transformation is invariant as distance is relatively small compared to norm of H0
-50%_y 50%_x = Transformation is invariant as distance is relatively small compared to norm of H0
-25%_y 25%_x = Transformation is invariant as distance is relatively small compared to norm of H0
-100%_x 50%_y = Transformation is invariant as distance is relatively small compared to norm of H0
-100%_y 50%_x = Transformation is invariant as distance is relatively small compared to norm of H0
