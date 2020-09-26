@@ -1,0 +1,693 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.26)  26 SEP 2020 20:47
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"y:/machien perception/Machine_Perception/Assignment/report/conference_101719.tex"
+(y:/machien perception/Machine_Perception/Assignment/report/conference_101719.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-09-24> (y:/machien perception/Machine_Perception/Assignment/report/IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen134
+\@IEEEtrantmpdimenB=\dimen135
+\@IEEEtrantmpdimenC=\dimen136
+\@IEEEtrantmpcountA=\count168
+\@IEEEtrantmpcountB=\count169
+\@IEEEtrantmpcountC=\count170
+\@IEEEtrantmptoksA=\toks15
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 503.
+(c:/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen137
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen138
+\CLASSINFOnormalsizeunitybaselineskip=\dimen139
+\IEEEnormaljot=\dimen140
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+\IEEEquantizedlength=\dimen141
+\IEEEquantizedlengthdiff=\dimen142
+\IEEEquantizedtextheightdiff=\dimen143
+\IEEEilabelindentA=\dimen144
+\IEEEilabelindentB=\dimen145
+\IEEEilabelindent=\dimen146
+\IEEEelabelindent=\dimen147
+\IEEEdlabelindent=\dimen148
+\IEEElabelindent=\dimen149
+\IEEEiednormlabelsep=\dimen150
+\IEEEiedmathlabelsep=\dimen151
+\IEEEiedtopsep=\skip47
+\c@section=\count171
+\c@subsection=\count172
+\c@subsubsection=\count173
+\c@paragraph=\count174
+\c@IEEEsubequation=\count175
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\c@figure=\count176
+\c@table=\count177
+\@IEEEeqnnumcols=\count178
+\@IEEEeqncolcnt=\count179
+\@IEEEsubeqnnumrollback=\count180
+\@IEEEquantizeheightA=\dimen152
+\@IEEEquantizeheightB=\dimen153
+\@IEEEquantizeheightC=\dimen154
+\@IEEEquantizeprevdepth=\dimen155
+\@IEEEquantizemultiple=\count181
+\@IEEEquantizeboxA=\box45
+\@IEEEtmpitemindent=\dimen156
+\IEEEPARstartletwidth=\dimen157
+\c@IEEEbiography=\count182
+\@IEEEtranrubishbin=\box46
+)
+** ATTENTION: Overriding command lockouts (line 2).
+(c:/texlive/2020/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen158
+)) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen159
+) (c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count183
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count184
+\leftroot@=\count185
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count186
+\DOTSCASE@=\count187
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen160
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count188
+\c@MaxMatrixCols=\count189
+\dotsspace@=\muskip16
+\c@parentequation=\count190
+\dspbrk@lvl=\count191
+\tag@help=\toks17
+\row@=\count192
+\column@=\count193
+\maxfields@=\count194
+\andhelp@=\toks18
+\eqnshift@=\dimen161
+\alignsep@=\dimen162
+\tagshift@=\dimen163
+\tagwidth@=\dimen164
+\totwidth@=\dimen165
+\lineht@=\dimen166
+\@envbody=\toks19
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+) (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (c:/texlive/2020/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+ (c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+\c@ALC@unique=\count195
+\c@ALC@line=\count196
+\c@ALC@rem=\count197
+\c@ALC@depth=\count198
+\ALC@tlm=\skip53
+\algorithmicindent=\skip54
+) (c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen167
+\Gin@req@width=\dimen168
+) (c:/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (c:/texlive/2020/texmf-dist/tex/latex/was/gensymb.sty
+Package: gensymb 2003/07/02 v1.0 (WaS)
+) (c:/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/09/12 v3.5b Customizing captions (AR)
+ (c:/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/09/17 v2.1b caption3 kernel (AR)
+\captionmargin=\dimen169
+\captionmargin@=\dimen170
+\captionwidth=\dimen171
+\caption@tempdima=\dimen172
+\caption@indent=\dimen173
+\caption@parindent=\dimen174
+\caption@hangindent=\dimen175
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEtablestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\normalfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptionsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\normalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi \fi  on input line 1120.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count199
+\c@continuedfloat=\count266
+) (c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count267
+\l__pdf_internal_box=\box49
+) (y:/machien perception/Machine_Perception/Assignment/report/conference_101719.aux
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+)
+\openout1 = `conference_101719.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+-- Lines per column: 56 (exact).
+(c:/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count268
+\scratchdimen=\dimen176
+\scratchbox=\box50
+\nofMPsegments=\count269
+\nofMParguments=\count270
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen177
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
+\everyMPtoPDFconversion=\toks23
+) (c:/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (c:/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\symgns@font=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
+(Font)                  TS1/ptm/m/n --> TS1/ptm/b/n on input line 14.
+Package gensymb Info: Math companion symbols declared on input line 14.
+LaTeX Info: Redefining \degree on input line 14.
+LaTeX Info: Redefining \celsius on input line 14.
+Package gensymb Info: Using text companion symbols for \degree, \celsius and \perthousand on input line 14.
+LaTeX Info: Redefining \ohm on input line 14.
+Package gensymb Info: Using \textohm for \ohm on input line 14.
+Package gensymb Info: Using \textmu for \micro on input line 14.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 27.
+ (c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+<./figures/diamond2.png, id=1, 182.6825pt x 279.0425pt>
+File: ./figures/diamond2.png Graphic file (type png)
+<use ./figures/diamond2.png>
+Package pdftex.def Info: ./figures/diamond2.png  used on input line 30.
+(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
+<./figures/Dugong.jpg, id=2, 863.225pt x 481.8pt>
+File: ./figures/Dugong.jpg Graphic file (type jpg)
+<use ./figures/Dugong.jpg>
+Package pdftex.def Info: ./figures/Dugong.jpg  used on input line 30.
+(pdftex.def)             Requested size: 431.61145pt x 240.8994pt.
+<./figures/RotationHists/diamondneutral Hist.png, id=3, 462.528pt x 346.896pt>
+File: ./figures/RotationHists/diamondneutral Hist.png Graphic file (type png)
+<use ./figures/RotationHists/diamondneutral Hist.png>
+Package pdftex.def Info: ./figures/RotationHists/diamondneutral Hist.png  used on input line 54.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/RotationHists/diamonddeg90 Hist.png, id=5, 462.528pt x 346.896pt>
+File: ./figures/RotationHists/diamonddeg90 Hist.png Graphic file (type png)
+<use ./figures/RotationHists/diamonddeg90 Hist.png>
+Package pdftex.def Info: ./figures/RotationHists/diamonddeg90 Hist.png  used on input line 54.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/RotationHists/diamonddegn90 Hist.png, id=6, 462.528pt x 346.896pt>
+File: ./figures/RotationHists/diamonddegn90 Hist.png Graphic file (type png)
+<use ./figures/RotationHists/diamonddegn90 Hist.png>
+Package pdftex.def Info: ./figures/RotationHists/diamonddegn90 Hist.png  used on input line 54.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/RotationHists/diamondflipped Hist.png, id=7, 462.528pt x 346.896pt>
+File: ./figures/RotationHists/diamondflipped Hist.png Graphic file (type png)
+<use ./figures/RotationHists/diamondflipped Hist.png>
+Package pdftex.def Info: ./figures/RotationHists/diamondflipped Hist.png  used on input line 59.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/RotationHists/diamonddeg45 Hist.png, id=8, 462.528pt x 346.896pt>
+File: ./figures/RotationHists/diamonddeg45 Hist.png Graphic file (type png)
+<use ./figures/RotationHists/diamonddeg45 Hist.png>
+Package pdftex.def Info: ./figures/RotationHists/diamonddeg45 Hist.png  used on input line 59.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/RotationHists/diamonddegn45 Hist.png, id=9, 462.528pt x 346.896pt>
+File: ./figures/RotationHists/diamonddegn45 Hist.png Graphic file (type png)
+<use ./figures/RotationHists/diamonddegn45 Hist.png>
+Package pdftex.def Info: ./figures/RotationHists/diamonddegn45 Hist.png  used on input line 59.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--67
+
+ []
+
+<./figures/ScalingHists/dugong.png, id=10, 462.528pt x 346.896pt>
+File: ./figures/ScalingHists/dugong.png Graphic file (type png)
+<use ./figures/ScalingHists/dugong.png>
+Package pdftex.def Info: ./figures/ScalingHists/dugong.png  used on input line 73.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/ScalingHists/dugong75.png, id=11, 462.528pt x 346.896pt>
+File: ./figures/ScalingHists/dugong75.png Graphic file (type png)
+<use ./figures/ScalingHists/dugong75.png>
+Package pdftex.def Info: ./figures/ScalingHists/dugong75.png  used on input line 73.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/ScalingHists/dugong50.png, id=12, 462.528pt x 346.896pt>
+File: ./figures/ScalingHists/dugong50.png Graphic file (type png)
+<use ./figures/ScalingHists/dugong50.png>
+Package pdftex.def Info: ./figures/ScalingHists/dugong50.png  used on input line 73.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/ScalingHists/dugong50h.png, id=13, 462.528pt x 346.896pt>
+File: ./figures/ScalingHists/dugong50h.png Graphic file (type png)
+<use ./figures/ScalingHists/dugong50h.png>
+Package pdftex.def Info: ./figures/ScalingHists/dugong50h.png  used on input line 77.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/ScalingHists/dugong50w.png, id=14, 462.528pt x 346.896pt>
+File: ./figures/ScalingHists/dugong50w.png Graphic file (type png)
+<use ./figures/ScalingHists/dugong50w.png>
+Package pdftex.def Info: ./figures/ScalingHists/dugong50w.png  used on input line 77.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/Harris Corner/diamondNeutral Corners.png, id=15, 182.6825pt x 279.0425pt>
+File: ./figures/Harris Corner/diamondNeutral Corners.png Graphic file (type png)
+<use ./figures/Harris Corner/diamondNeutral Corners.png>
+Package pdftex.def Info: ./figures/Harris Corner/diamondNeutral Corners.png  used on input line 89.
+(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
+<./figures/Harris Corner/diamondDeg 90 Corners.png, id=16, 279.0425pt x 182.6825pt>
+File: ./figures/Harris Corner/diamondDeg 90 Corners.png Graphic file (type png)
+<use ./figures/Harris Corner/diamondDeg 90 Corners.png>
+Package pdftex.def Info: ./figures/Harris Corner/diamondDeg 90 Corners.png  used on input line 89.
+(pdftex.def)             Requested size: 139.5209pt x 91.34102pt.
+<./figures/Harris Corner/diamondDeg -90 Corners.png, id=17, 279.0425pt x 182.6825pt>
+File: ./figures/Harris Corner/diamondDeg -90 Corners.png Graphic file (type png)
+<use ./figures/Harris Corner/diamondDeg -90 Corners.png>
+Package pdftex.def Info: ./figures/Harris Corner/diamondDeg -90 Corners.png  used on input line 89.
+(pdftex.def)             Requested size: 139.5209pt x 91.34102pt.
+<./figures/Harris Corner/diamond180 Deg Corners.png, id=18, 182.6825pt x 279.0425pt>
+File: ./figures/Harris Corner/diamond180 Deg Corners.png Graphic file (type png)
+<use ./figures/Harris Corner/diamond180 Deg Corners.png>
+Package pdftex.def Info: ./figures/Harris Corner/diamond180 Deg Corners.png  used on input line 94.
+(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
+<./figures/Harris Corner/diamondDeg -45 Corners.png, id=19, 365.365pt x 558.085pt>
+File: ./figures/Harris Corner/diamondDeg -45 Corners.png Graphic file (type png)
+<use ./figures/Harris Corner/diamondDeg -45 Corners.png>
+Package pdftex.def Info: ./figures/Harris Corner/diamondDeg -45 Corners.png  used on input line 94.
+(pdftex.def)             Requested size: 182.68205pt x 279.04182pt.
+<./figures/Harris Corner/diamondDeg 45 Corners.png, id=20, 365.365pt x 558.085pt>
+File: ./figures/Harris Corner/diamondDeg 45 Corners.png Graphic file (type png)
+<use ./figures/Harris Corner/diamondDeg 45 Corners.png>
+Package pdftex.def Info: ./figures/Harris Corner/diamondDeg 45 Corners.png  used on input line 94.
+(pdftex.def)             Requested size: 182.68205pt x 279.04182pt.
+<./figures/Harris Corner/DugongNeutral Corners.png, id=21, 863.225pt x 481.8pt>
+File: ./figures/Harris Corner/DugongNeutral Corners.png Graphic file (type png)
+<use ./figures/Harris Corner/DugongNeutral Corners.png>
+Package pdftex.def Info: ./figures/Harris Corner/DugongNeutral Corners.png  used on input line 106.
+(pdftex.def)             Requested size: 431.61145pt x 240.8994pt.
+<./figures/Harris Corner/Dugong75 Corners.png, id=22, 647.41875pt x 361.35pt>
+File: ./figures/Harris Corner/Dugong75 Corners.png Graphic file (type png)
+<use ./figures/Harris Corner/Dugong75 Corners.png>
+Package pdftex.def Info: ./figures/Harris Corner/Dugong75 Corners.png  used on input line 106.
+(pdftex.def)             Requested size: 323.70857pt x 180.67456pt.
+<./figures/Harris Corner/Dugong50 Corners.png, id=23, 431.6125pt x 240.9pt>
+File: ./figures/Harris Corner/Dugong50 Corners.png Graphic file (type png)
+<use ./figures/Harris Corner/Dugong50 Corners.png>
+Package pdftex.def Info: ./figures/Harris Corner/Dugong50 Corners.png  used on input line 106.
+(pdftex.def)             Requested size: 215.80571pt x 120.44969pt.
+<./figures/Harris Corner/DugongheightReduced Corners.png, id=24, 863.225pt x 240.9pt>
+File: ./figures/Harris Corner/DugongheightReduced Corners.png Graphic file (type png)
+<use ./figures/Harris Corner/DugongheightReduced Corners.png>
+Package pdftex.def Info: ./figures/Harris Corner/DugongheightReduced Corners.png  used on input line 110.
+(pdftex.def)             Requested size: 431.61145pt x 120.44969pt.
+<./figures/Harris Corner/DugongwidthReduced Corners.png, id=25, 431.6125pt x 481.8pt>
+File: ./figures/Harris Corner/DugongwidthReduced Corners.png Graphic file (type png)
+<use ./figures/Harris Corner/DugongwidthReduced Corners.png>
+Package pdftex.def Info: ./figures/Harris Corner/DugongwidthReduced Corners.png  used on input line 110.
+(pdftex.def)             Requested size: 215.80571pt x 240.8994pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--118
+
+ []
+
+[1{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <y:/machien perception/Machine_Perception/Assignment/report/./figures/diamond2.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/Dugong.jpg> <y:/machien perception/Machine_Perception/Assignment/report/./figures/RotationHists/diamondneutral Hist.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/RotationHists/diamonddeg90 Hist.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/RotationHists/diamonddegn90 Hist.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/RotationHists/diamondflipped Hist.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/RotationHists/diamonddeg45 Hist.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/RotationHists/diamonddegn45 Hist.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/ScalingHists/dugong.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/ScalingHists/dugong75.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/ScalingHists/dugong50.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/ScalingHists/dugong50h.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/ScalingHists/dugong50w.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/Harris Corner/diamondNeutral Corners.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/Harris Corner/diamondDeg 90 Corners.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/Harris Corner/diamondDeg -90 Corners.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/Harris Corner/diamond180 Deg Corners.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/Harris Corner/diamondDeg -45 Corners.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/Harris Corner/diamondDeg 45 Corners.png (PNG copy)>]
+<./figures/SIFT/diamondNeutral SIFT.png, id=47, 182.6825pt x 279.0425pt>
+File: ./figures/SIFT/diamondNeutral SIFT.png Graphic file (type png)
+<use ./figures/SIFT/diamondNeutral SIFT.png>
+Package pdftex.def Info: ./figures/SIFT/diamondNeutral SIFT.png  used on input line 124.
+(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
+<./figures/SIFT/diamondDeg 90 SIFT.png, id=48, 279.0425pt x 182.6825pt>
+File: ./figures/SIFT/diamondDeg 90 SIFT.png Graphic file (type png)
+<use ./figures/SIFT/diamondDeg 90 SIFT.png>
+Package pdftex.def Info: ./figures/SIFT/diamondDeg 90 SIFT.png  used on input line 124.
+(pdftex.def)             Requested size: 139.5209pt x 91.34102pt.
+<./figures/SIFT/diamondDeg -90 SIFT.png, id=49, 279.0425pt x 182.6825pt>
+File: ./figures/SIFT/diamondDeg -90 SIFT.png Graphic file (type png)
+<use ./figures/SIFT/diamondDeg -90 SIFT.png>
+Package pdftex.def Info: ./figures/SIFT/diamondDeg -90 SIFT.png  used on input line 124.
+(pdftex.def)             Requested size: 139.5209pt x 91.34102pt.
+<./figures/SIFT/diamond180 Deg SIFT.png, id=50, 182.6825pt x 279.0425pt>
+File: ./figures/SIFT/diamond180 Deg SIFT.png Graphic file (type png)
+<use ./figures/SIFT/diamond180 Deg SIFT.png>
+Package pdftex.def Info: ./figures/SIFT/diamond180 Deg SIFT.png  used on input line 129.
+(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
+<./figures/SIFT/diamondDeg -45 SIFT.png, id=51, 365.365pt x 558.085pt>
+File: ./figures/SIFT/diamondDeg -45 SIFT.png Graphic file (type png)
+<use ./figures/SIFT/diamondDeg -45 SIFT.png>
+Package pdftex.def Info: ./figures/SIFT/diamondDeg -45 SIFT.png  used on input line 129.
+(pdftex.def)             Requested size: 182.68205pt x 279.04182pt.
+<./figures/SIFT/diamondDeg 45 SIFT.png, id=52, 365.365pt x 558.085pt>
+File: ./figures/SIFT/diamondDeg 45 SIFT.png Graphic file (type png)
+<use ./figures/SIFT/diamondDeg 45 SIFT.png>
+Package pdftex.def Info: ./figures/SIFT/diamondDeg 45 SIFT.png  used on input line 129.
+(pdftex.def)             Requested size: 182.68205pt x 279.04182pt.
+File: ./figures/SIFT/diamondNeutral SIFT.png Graphic file (type png)
+<use ./figures/SIFT/diamondNeutral SIFT.png>
+Package pdftex.def Info: ./figures/SIFT/diamondNeutral SIFT.png  used on input line 140.
+(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
+<./figures/SIFT/diamond75 SIFT.png, id=53, 136.51pt x 208.78pt>
+File: ./figures/SIFT/diamond75 SIFT.png Graphic file (type png)
+<use ./figures/SIFT/diamond75 SIFT.png>
+Package pdftex.def Info: ./figures/SIFT/diamond75 SIFT.png  used on input line 140.
+(pdftex.def)             Requested size: 68.25482pt x 104.38972pt.
+<./figures/SIFT/diamond50 SIFT.png, id=54, 91.34125pt x 139.52126pt>
+File: ./figures/SIFT/diamond50 SIFT.png Graphic file (type png)
+<use ./figures/SIFT/diamond50 SIFT.png>
+Package pdftex.def Info: ./figures/SIFT/diamond50 SIFT.png  used on input line 140.
+(pdftex.def)             Requested size: 45.6705pt x 69.76045pt.
+<./figures/SIFT/diamondheightReduced SIFT.png, id=55, 182.6825pt x 139.52126pt>
+File: ./figures/SIFT/diamondheightReduced SIFT.png Graphic file (type png)
+<use ./figures/SIFT/diamondheightReduced SIFT.png>
+Package pdftex.def Info: ./figures/SIFT/diamondheightReduced SIFT.png  used on input line 144.
+(pdftex.def)             Requested size: 91.34102pt x 69.76045pt.
+<./figures/SIFT/diamondwidthReduced SIFT.png, id=56, 91.34125pt x 279.0425pt>
+File: ./figures/SIFT/diamondwidthReduced SIFT.png Graphic file (type png)
+<use ./figures/SIFT/diamondwidthReduced SIFT.png>
+Package pdftex.def Info: ./figures/SIFT/diamondwidthReduced SIFT.png  used on input line 144.
+(pdftex.def)             Requested size: 45.6705pt x 139.5209pt.
+<./figures/task 2/90deg-card-SIFT.png, id=57, 462.528pt x 346.896pt>
+File: ./figures/task 2/90deg-card-SIFT.png Graphic file (type png)
+<use ./figures/task 2/90deg-card-SIFT.png>
+Package pdftex.def Info: ./figures/task 2/90deg-card-SIFT.png  used on input line 177.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/task 2/180deg-card-SIFT.png, id=58, 462.528pt x 346.896pt>
+File: ./figures/task 2/180deg-card-SIFT.png Graphic file (type png)
+<use ./figures/task 2/180deg-card-SIFT.png>
+Package pdftex.def Info: ./figures/task 2/180deg-card-SIFT.png  used on input line 177.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/task 2/n90deg-card-SIFT.png, id=59, 462.528pt x 346.896pt>
+File: ./figures/task 2/n90deg-card-SIFT.png Graphic file (type png)
+<use ./figures/task 2/n90deg-card-SIFT.png>
+Package pdftex.def Info: ./figures/task 2/n90deg-card-SIFT.png  used on input line 177.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/task 2/50w50h-dugong-sift.png, id=60, 462.528pt x 346.896pt>
+File: ./figures/task 2/50w50h-dugong-sift.png Graphic file (type png)
+<use ./figures/task 2/50w50h-dugong-sift.png>
+Package pdftex.def Info: ./figures/task 2/50w50h-dugong-sift.png  used on input line 182.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/task 2/1w50h-dugong-sift.png, id=61, 462.528pt x 346.896pt>
+File: ./figures/task 2/1w50h-dugong-sift.png Graphic file (type png)
+<use ./figures/task 2/1w50h-dugong-sift.png>
+Package pdftex.def Info: ./figures/task 2/1w50h-dugong-sift.png  used on input line 182.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+<./figures/task 2/50w1h-dugong-sift.png, id=62, 462.528pt x 346.896pt>
+File: ./figures/task 2/50w1h-dugong-sift.png Graphic file (type png)
+<use ./figures/task 2/50w1h-dugong-sift.png>
+Package pdftex.def Info: ./figures/task 2/50w1h-dugong-sift.png  used on input line 182.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ [2 <y:/machien perception/Machine_Perception/Assignment/report/./figures/Harris Corner/DugongNeutral Corners.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/Harris Corner/Dugong75 Corners.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/Harris Corner/Dugong50 Corners.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/Harris Corner/DugongheightReduced Corners.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/Harris Corner/DugongwidthReduced Corners.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/SIFT/diamondNeutral SIFT.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/SIFT/diamondDeg 90 SIFT.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/SIFT/diamondDeg -90 SIFT.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/SIFT/diamond180 Deg SIFT.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/SIFT/diamondDeg -45 SIFT.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/SIFT/diamondDeg 45 SIFT.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/SIFT/diamond75 SIFT.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/SIFT/diamond50 SIFT.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/SIFT/diamondheightReduced SIFT.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/SIFT/diamondwidthReduced SIFT.png (PNG copy)>]
+<./figures/task 3/Diamond.png, id=66, 182.6825pt x 279.0425pt>
+File: ./figures/task 3/Diamond.png Graphic file (type png)
+<use ./figures/task 3/Diamond.png>
+Package pdftex.def Info: ./figures/task 3/Diamond.png  used on input line 196.
+(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
+<./figures/task 3/BinaryImage.png, id=67, 863.225pt x 481.8pt>
+File: ./figures/task 3/BinaryImage.png Graphic file (type png)
+<use ./figures/task 3/BinaryImage.png>
+Package pdftex.def Info: ./figures/task 3/BinaryImage.png  used on input line 196.
+(pdftex.def)             Requested size: 431.61145pt x 240.8994pt.
+<./figures/task 3/card/DetectedObject-1.png, id=68, 181.67876pt x 278.03876pt>
+File: ./figures/task 3/card/DetectedObject-1.png Graphic file (type png)
+<use ./figures/task 3/card/DetectedObject-1.png>
+Package pdftex.def Info: ./figures/task 3/card/DetectedObject-1.png  used on input line 212.
+(pdftex.def)             Requested size: 90.83914pt x 139.01903pt.
+<./figures/task 3/card/DetectedObject-2.png, id=69, 178.6675pt x 276.03125pt>
+File: ./figures/task 3/card/DetectedObject-2.png Graphic file (type png)
+<use ./figures/task 3/card/DetectedObject-2.png>
+Package pdftex.def Info: ./figures/task 3/card/DetectedObject-2.png  used on input line 212.
+(pdftex.def)             Requested size: 89.33353pt x 138.01527pt.
+<./figures/task 3/card/DetectedObject-3.png, id=70, 15.05624pt x 27.10126pt>
+File: ./figures/task 3/card/DetectedObject-3.png Graphic file (type png)
+<use ./figures/task 3/card/DetectedObject-3.png>
+Package pdftex.def Info: ./figures/task 3/card/DetectedObject-3.png  used on input line 212.
+(pdftex.def)             Requested size: 7.52809pt x 13.55058pt.
+<./figures/task 3/card/DetectedObject-4.png, id=71, 36.135pt x 45.16875pt>
+File: ./figures/task 3/card/DetectedObject-4.png Graphic file (type png)
+<use ./figures/task 3/card/DetectedObject-4.png>
+Package pdftex.def Info: ./figures/task 3/card/DetectedObject-4.png  used on input line 212.
+(pdftex.def)             Requested size: 18.06744pt x 22.5843pt.
+<./figures/task 3/card/DetectedObject-5.png, id=72, 13.04875pt x 17.06375pt>
+File: ./figures/task 3/card/DetectedObject-5.png Graphic file (type png)
+<use ./figures/task 3/card/DetectedObject-5.png>
+Package pdftex.def Info: ./figures/task 3/card/DetectedObject-5.png  used on input line 212.
+(pdftex.def)             Requested size: 6.52435pt x 8.53185pt.
+<./figures/task 3/card/DetectedObject-6.png, id=73, 36.135pt x 45.16875pt>
+File: ./figures/task 3/card/DetectedObject-6.png Graphic file (type png)
+<use ./figures/task 3/card/DetectedObject-6.png>
+Package pdftex.def Info: ./figures/task 3/card/DetectedObject-6.png  used on input line 212.
+(pdftex.def)             Requested size: 18.06744pt x 22.5843pt.
+<./figures/task 3/card/DetectedObject-7.png, id=74, 14.0525pt x 17.06375pt>
+File: ./figures/task 3/card/DetectedObject-7.png Graphic file (type png)
+<use ./figures/task 3/card/DetectedObject-7.png>
+Package pdftex.def Info: ./figures/task 3/card/DetectedObject-7.png  used on input line 212.
+(pdftex.def)             Requested size: 7.02623pt x 8.53185pt.
+<./figures/task 3/card/DetectedObject-8.png, id=75, 15.05624pt x 27.10126pt>
+File: ./figures/task 3/card/DetectedObject-8.png Graphic file (type png)
+<use ./figures/task 3/card/DetectedObject-8.png>
+Package pdftex.def Info: ./figures/task 3/card/DetectedObject-8.png  used on input line 212.
+(pdftex.def)             Requested size: 7.52809pt x 13.55058pt.
+<./figures/task 3/dugong/DetectedObject-1.png, id=76, 862.22125pt x 480.79625pt>
+File: ./figures/task 3/dugong/DetectedObject-1.png Graphic file (type png)
+<use ./figures/task 3/dugong/DetectedObject-1.png>
+Package pdftex.def Info: ./figures/task 3/dugong/DetectedObject-1.png  used on input line 223.
+(pdftex.def)             Requested size: 431.10957pt x 240.39752pt.
+<./figures/task 3/dugong/DetectedObject-2.png, id=77, 35.13126pt x 63.23625pt>
+File: ./figures/task 3/dugong/DetectedObject-2.png Graphic file (type png)
+<use ./figures/task 3/dugong/DetectedObject-2.png>
+Package pdftex.def Info: ./figures/task 3/dugong/DetectedObject-2.png  used on input line 223.
+(pdftex.def)             Requested size: 17.56557pt x 31.61804pt.
+<./figures/task 3/dugong/DetectedObject-3.png, id=78, 9.03375pt x 7.02625pt>
+File: ./figures/task 3/dugong/DetectedObject-3.png Graphic file (type png)
+<use ./figures/task 3/dugong/DetectedObject-3.png>
+Package pdftex.def Info: ./figures/task 3/dugong/DetectedObject-3.png  used on input line 223.
+(pdftex.def)             Requested size: 4.51685pt x 3.5131pt.
+<./figures/task 4/card/2 clusters HSV.png, id=79, 182.6825pt x 279.0425pt>
+File: ./figures/task 4/card/2 clusters HSV.png Graphic file (type png)
+<use ./figures/task 4/card/2 clusters HSV.png>
+Package pdftex.def Info: ./figures/task 4/card/2 clusters HSV.png  used on input line 239.
+(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
+<./figures/task 4/card/2 clusters LAB.png, id=80, 182.6825pt x 279.0425pt>
+File: ./figures/task 4/card/2 clusters LAB.png Graphic file (type png)
+<use ./figures/task 4/card/2 clusters LAB.png>
+Package pdftex.def Info: ./figures/task 4/card/2 clusters LAB.png  used on input line 239.
+(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
+<./figures/task 4/card/2 clusters RGB.png, id=81, 182.6825pt x 279.0425pt>
+File: ./figures/task 4/card/2 clusters RGB.png Graphic file (type png)
+<use ./figures/task 4/card/2 clusters RGB.png>
+Package pdftex.def Info: ./figures/task 4/card/2 clusters RGB.png  used on input line 239.
+(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
+<./figures/task 4/card/2 clusters XYZ.png, id=82, 182.6825pt x 279.0425pt>
+File: ./figures/task 4/card/2 clusters XYZ.png Graphic file (type png)
+<use ./figures/task 4/card/2 clusters XYZ.png>
+Package pdftex.def Info: ./figures/task 4/card/2 clusters XYZ.png  used on input line 239.
+(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
+<./figures/task 4/dugong/4 clusters HSV.png, id=83, 863.225pt x 481.8pt>
+File: ./figures/task 4/dugong/4 clusters HSV.png Graphic file (type png)
+<use ./figures/task 4/dugong/4 clusters HSV.png>
+Package pdftex.def Info: ./figures/task 4/dugong/4 clusters HSV.png  used on input line 251.
+(pdftex.def)             Requested size: 431.61145pt x 240.8994pt.
+<./figures/task 4/dugong/3 clusters YUV.png, id=84, 863.225pt x 481.8pt>
+File: ./figures/task 4/dugong/3 clusters YUV.png Graphic file (type png)
+<use ./figures/task 4/dugong/3 clusters YUV.png>
+Package pdftex.def Info: ./figures/task 4/dugong/3 clusters YUV.png  used on input line 251.
+(pdftex.def)             Requested size: 431.61145pt x 240.8994pt.
+
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[3 <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/90deg-card-SIFT.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/180deg-card-SIFT.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/n90deg-card-SIFT.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/50w50h-dugong-sift.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/1w50h-dugong-sift.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/50w1h-dugong-sift.png> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/Diamond.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/BinaryImage.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-1.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-2.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-3.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-4.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-5.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-6.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-7.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-8.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/dugong/DetectedObject-1.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/dugong/DetectedObject-2.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/dugong/DetectedObject-3.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters HSV.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters LAB.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters RGB.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters XYZ.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/4 clusters HSV.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters YUV.png (PNG copy)>] (y:/machien perception/Machine_Perception/Assignment/report/conference_101719.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5497 strings out of 480875
+ 94614 string characters out of 5911456
+ 337985 words of memory out of 5000000
+ 21016 multiletter control sequences out of 15000+600000
+ 571041 words of font info for 98 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,8n,43p,381b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "y:/machien perception/Machine_Perception/Assignment/report/conference_101719.pdf" (3 pages, 3459146 bytes).
+PDF statistics:
+ 109 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 296 words of extra memory for PDF output out of 10000 (max. 10000000)
+
