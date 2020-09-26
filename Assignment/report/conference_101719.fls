@@ -89,6 +89,16 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT c:/texlive/2020/texmf-dist/tex/latex/was/gensymb.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/was/gensymb.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/txfonts/t1txtt.fd
+INPUT c:/texlive/2020/texmf-dist/tex/latex/txfonts/t1txtt.fd
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/txfonts/t1xbtt.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
 INPUT c:/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
@@ -330,8 +340,33 @@ INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 
 INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters YUV.png
 INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters YUV.png
 INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters YUV.png
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_1.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_1.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_1.py
+INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/omsptm.fd
+INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/omsptm.fd
+INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/omlptm.fd
+INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/omlptm.fd
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_2.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_2.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_2.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_3.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_3.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_3.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_4.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_4.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_4.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/utils.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/utils.py
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/utils.py
 INPUT y:/machien perception/Machine_Perception/Assignment/report/conference_101719.aux
 INPUT c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb
+INPUT c:/texlive/2020/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb
 INPUT c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb

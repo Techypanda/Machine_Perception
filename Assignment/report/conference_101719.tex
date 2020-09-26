@@ -8,6 +8,49 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{gensymb}
+
+% Python shit..
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false            % 
+}}
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+\pythonstyle
+\lstset{#1}
+}
+{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+
+
 \usepackage[center]{caption}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -255,5 +298,20 @@ segmented the card image at 2 clusters.
 After testing image segmentation with 1 cluster, 2 clusters, 3 clusters, 4 clusters ... up to 10 I concluded that 1 - 4 clusters were
 the only impacts on image, I found that 4 clusters HSV and 3 clusters YUV extracted the most useful data i.e YUV at 4 and HSV at 3 detected alot of the dugong
 and the seaweed.
-
+\clearpage
+\onecolumn
+\section{Appendix 1 - (Please Refer To Appendix 5 For utils.py)}
+\pythonexternal{./code/task_1.py}
+\clearpage
+\section{Appendix 2 - (Please Refer To Appendix 5 For utils.py)}
+\pythonexternal{./code/task_2.py}
+\clearpage
+\section{Appendix 3 - (Please Refer To Appendix 5 For utils.py)}
+\pythonexternal{./code/task_3.py}
+\clearpage
+\section{Appendix 4 - (Please Refer To Appendix 5 For utils.py)}
+\pythonexternal{./code/task_4.py}
+\clearpage
+\section{Appendix 5 - utils.py (Used throughout.)}
+\pythonexternal{./code/utils.py}
 \end{document}
