@@ -3,6 +3,8 @@ import numpy as np
 import utils
 import math
 import random
+utils.setup()
+
 title = {'./images/diamond2.png': 'diamond', './images/Dugong.jpg': 'Dugong'} # lazy quick fix...
 imageSources = ['./images/diamond2.png', './images/Dugong.jpg']
 for imageSource in imageSources: # ROTATION

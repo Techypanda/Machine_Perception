@@ -3,6 +3,8 @@ import numpy as np
 import utils
 import math
 from matplotlib import pyplot as plt
+utils.setup()
+
 hog = cv.HOGDescriptor('hog.xml')
 winStride = (8,8)
 padding = (8,8)

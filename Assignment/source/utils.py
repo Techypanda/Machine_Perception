@@ -2,6 +2,26 @@ import cv2 as cv
 import numpy as np
 from matplotlib import pyplot as plt
 import math
+import os
+
+def setup():
+  try:
+    os.mkdir("./out_files")
+    os.mkdir("./out_files/rotation")
+    os.mkdir("./out_files/scale")
+    os.mkdir("./out_files/task_2")
+    os.mkdir("./out_files/task_2/rotation")
+    os.mkdir("./out_files/task_2/scaled")
+    os.mkdir("./out_files/task_3")
+    os.mkdir("./out_files/task_3/card_objects")
+    os.mkdir("./out_files/task_3/dugong_objects")
+    os.mkdir("./out_files/task_4")
+    os.mkdir("./out_files/task_4/card")
+    os.mkdir("./out_files/task_4/dugong")
+  except FileExistsError:
+    print("Required Folders Exist")
+  except:
+    print("Unable to create required folders, please create them manually.")
 
 def rAngle(img, ang): # angle in radians.
   canvas = np.zeros((int(img.shape[0] * 2), int(img.shape[1] * 2), 3), dtype=np.uint8)

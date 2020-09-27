@@ -2,6 +2,7 @@ import cv2 as cv
 import numpy as np
 import utils
 import random
+utils.setup()
 
 card = cv.imread("./images/diamond2.png", cv.IMREAD_GRAYSCALE)
 dugong = cv.imread('./images/Dugong.jpg', cv.IMREAD_GRAYSCALE)
