@@ -45,11 +45,39 @@ def toFile(arr, filename):
       file.write('\n')
 
 def hogVariation(H0, H1):
+  TOL = 1.0 # 0.0 - 1.0 is considered okay
   distance = cv.norm(H0 - H1)
-  if (distance <= cv.norm(H0)):
-    return "Transformation is invariant as distance is relatively small compared to norm of H0"
+  variant = distance >= -1 and distance <= 1.0
+  if (variant):
+    return """
+TOLERANCE: {0}
+H0 = {1}
+H1 = {2}
+Distance Between norm(h0 - h1) = {3}
+-1.0 <= Distance <= 1.0: {4}
+Transformation is invariant as distance is relatively small compared to norm of H0
+    """.format(
+      str(TOL), 
+      str(H0), 
+      str(H1), 
+      str(cv.norm(H0 - H1)), 
+      str(variant)
+    )
   else:
-    return "Transformation is variant as distance is not relatively small compared to norm of H0"
+    return """
+TOLERANCE: {0}
+H0 = {1}
+H1 = {2}
+Distance Between norm(h0 - h1) = {3}
+-1.0 <= Distance <= 1.0: {4}
+Transformation is variant as distance is not relatively small compared to norm of H0
+    """.format(
+      str(TOL), 
+      str(H0), 
+      str(H1), 
+      str(cv.norm(H0 - H1)), 
+      str(variant)
+    )
 
 
 def concon(arr):
