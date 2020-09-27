@@ -8,6 +8,7 @@
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{gensymb}
+\usepackage{float}
 
 % Python shit..
 % Default fixed font does not support bold face
@@ -24,6 +25,8 @@
 
 % Python style for highlighting
 \newcommand\pythonstyle{\lstset{
+breaklines=true,
+postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
 language=Python,
 basicstyle=\ttm,
 otherkeywords={self},             % Add keywords here
@@ -58,7 +61,6 @@ showstringspaces=false            %
 
 \title{Machine Perception 2020\\
 {\footnotesize \textsuperscript{Curtin University - Perth}}
-\thanks{Identify applicable funding agency here. If none, delete this.}
 }
 
 \author{\IEEEauthorblockN{Jonathan Wright}
@@ -68,7 +70,7 @@ Perth, WA \\
 19779085@student.curtin.edu.au}}
 
 \maketitle
-\begin{figure}[htbp]
+\begin{figure}[!htbp]
     \centerline{{\includegraphics[width=20mm, scale=0.5]{./figures/diamond2.png}}
     {\includegraphics[width=50mm, scale=0.5]{./figures/Dugong.jpg}}}
     \caption{Source Images:\\*
@@ -83,13 +85,12 @@ This paper will explore questions asked by the Machine Perception 2020 Assignmen
 3 - Object Extraction using CCL on Figures 1 and 2.
 4 - Image Segmentation on Figures 1 and 2 using K-Means and different colorspaces.
 \end{abstract}
-
 \section{Task One}
 \subsection{Generated Images}
 For this section I have generated images of various rotations: (180\degree, 45\degree, -45\degree, 90\degree, -90\degree).\\*
 I have also generated images of various scales: (100\%, 50\%, 25\%, 50\% Height 100\% Width, 50\% Width 100\% Height)
 \subsection{Image Histograms}
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centerline{
         {\includegraphics[width=20mm, scale=0.5]{./figures/RotationHists/diamondneutral Hist.png}}
         {\includegraphics[width=20mm, scale=0.5]{./figures/RotationHists/diamonddeg90 Hist.png}}
@@ -103,20 +104,45 @@ I have also generated images of various scales: (100\%, 50\%, 25\%, 50\% Height 
     \caption{Diamond Rotation Histograms: (Neutral, -90\degree, 90\degree, 180\degree, 45\degree and -45\degree\ NOTE: 45 Degrees will not be the same due to adding black)}
     \label{fig}
 \end{figure}
-
+\begin{figure}[H]
+    \centerline{
+        {\includegraphics[width=20mm, scale=0.5]{./figures/RotationHists/Dugongneutral Hist.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/RotationHists/Dugongdeg90 Hist.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/RotationHists/Dugongdegn90 Hist.png}}
+    }
+    \centerline{
+        {\includegraphics[width=20mm, scale=0.5]{./figures/RotationHists/Dugongflipped Hist.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/RotationHists/Dugongdeg45 Hist.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/RotationHists/Dugongdegn45 Hist.png}}
+    }
+    \caption{Dugong Rotation Histograms: (Neutral, -90\degree, 90\degree, 180\degree, 45\degree and -45\degree\ NOTE: 45 Degrees will not be the same due to adding black)}
+    \label{fig}
+\end{figure}
 Rotation: \\*
 Image Histograms are invariant to rotation, as you can see with my histograms they remain constant through rotations (90\degree, 180\degree, -90\degree, and 0\degree)
 a important note to make is that while 45\degree and -45\degree are not the same as the rest, this is because I had to add additional black to the image to fit it on the canvas.\\
-
-\begin{figure}[htbp]
+\begin{figure}[H]
+    \centerline{
+        {\includegraphics[width=20mm, scale=0.5]{./figures/ScalingHists/diamond.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/ScalingHists/diamond75.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/ScalingHists/diamond50.png}}
+    }
+    \centerline{
+        {\includegraphics[width=20mm, scale=0.5]{./figures/ScalingHists/diamond50w.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/ScalingHists/diamond50h.png}}
+    }
+    \caption{Diamond Scaling Histograms: (Neutral, 75\%, 50\%, 50\% width, 50\% height)}
+    \label{fig}
+\end{figure}
+\begin{figure}[H]
     \centerline{
         {\includegraphics[width=20mm, scale=0.5]{./figures/ScalingHists/dugong.png}}
         {\includegraphics[width=20mm, scale=0.5]{./figures/ScalingHists/dugong75.png}}
         {\includegraphics[width=20mm, scale=0.5]{./figures/ScalingHists/dugong50.png}}
     }
     \centerline{
-        {\includegraphics[width=20mm, scale=0.5]{./figures/ScalingHists/dugong50h.png}}
         {\includegraphics[width=20mm, scale=0.5]{./figures/ScalingHists/dugong50w.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/ScalingHists/dugong50h.png}}
     }
     \caption{Dugong Scaling Histograms: (Neutral, 75\%, 50\%, 50\% width, 50\% height)}
     \label{fig}
@@ -124,7 +150,7 @@ a important note to make is that while 45\degree and -45\degree are not the same
 Scaling: \\*
 Image Histograms are invariant to scaling, as you can see with my histograms they remain constant through scaling.
 \subsection{Harris Corner Detectors}
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centerline{
         {\includegraphics[width=10mm, scale=0.5]{./figures/Harris Corner/diamondNeutral Corners.png}}
         {\includegraphics[width=20mm, scale=0.5]{./figures/Harris Corner/diamondDeg 90 Corners.png}}
@@ -138,10 +164,23 @@ Image Histograms are invariant to scaling, as you can see with my histograms the
     \caption{Diamond Rotation Harris Corner Detections (Neutral, -90\degree, 90\degree, 180\degree, 45\degree and -45\degree)}
     \label{fig}
 \end{figure}
+\begin{figure}[H]
+    \centerline{
+        {\includegraphics[width=40mm, scale=0.5]{./figures/Harris Corner/DugongNeutral Corners.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/Harris Corner/DugongDeg 90 Corners.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/Harris Corner/DugongDeg -90 Corners.png}}
+    }
+    \centerline{
+        {\includegraphics[width=30mm, scale=0.5]{./figures/Harris Corner/Dugong180 Deg Corners.png}}
+        {\includegraphics[width=30mm, scale=0.5]{./figures/Harris Corner/DugongDeg -45 Corners.png}}
+        {\includegraphics[width=30mm, scale=0.5]{./figures/Harris Corner/DugongDeg 45 Corners.png}}
+    }
+    \caption{Dugong Rotation Harris Corner Detections (Neutral, -90\degree, 90\degree, 180\degree, 45\degree and -45\degree)}
+    \label{fig}
+\end{figure}
 Rotation: \\*
 From the results above we can see that the same edges are being detected on all rotations with no variancy, as such we can conclude that Harris Corner Detection is rotation invariant.
-\\*\\*\\*
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centerline{
         {\includegraphics[width=20mm, scale=0.5]{./figures/Harris Corner/DugongNeutral Corners.png}}
         {\includegraphics[width=20mm, scale=0.5]{./figures/Harris Corner/Dugong75 Corners.png}}
@@ -155,11 +194,25 @@ From the results above we can see that the same edges are being detected on all 
     While hard to see they are not the same!}
     \label{fig}
 \end{figure}
-\\*Scaling:
+\begin{figure}[H]
+    \centerline{
+        {\includegraphics[width=20mm, scale=0.5]{./figures/Harris Corner/diamondNeutral Corners.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/Harris Corner/diamond75 Corners.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/Harris Corner/diamond50 Corners.png}}
+    }
+    \centerline{
+        {\includegraphics[width=20mm, scale=0.5]{./figures/Harris Corner/diamondheightReduced Corners.png}}
+        {\includegraphics[width=10mm, scale=0.5]{./figures/Harris Corner/diamondwidthReduced Corners.png}}
+    }
+    \caption{Diamond Scaling Corner Detection: (Neutral, 75\%, 50\%, 50\% height, 50\% width)\\*
+    While hard to see they are not the same!}
+    \label{fig}
+\end{figure}
+Scaling:
 From the results above I can conclude from visual inspection that Harris Corner Detection is scale variant, I conclude this by the fact that different edges are detected at different scales, sometimes the seaweed is not picked up (as in case 50\% height).
 \\*
 \subsection{SIFT Feature Detectors}
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centerline{
         {\includegraphics[width=20mm, scale=0.5]{./figures/SIFT/diamondNeutral SIFT.png}}
         {\includegraphics[width=20mm, scale=0.5]{./figures/SIFT/diamondDeg 90 SIFT.png}}
@@ -173,22 +226,52 @@ From the results above I can conclude from visual inspection that Harris Corner 
     \caption{Diamond SIFT Detections (Neutral, -90\degree, 90\degree, 180\degree, -45\degree and 45\degree)}
     \label{fig}
 \end{figure}
-Rotation: \\*
-As you can see from the above results, SIFT is rotation invariant as it detects the same points at each rotation.
-\begin{figure}[htbp]
+\clearpage
+\begin{figure}[H]
     \centerline{
-        {\includegraphics[width=10mm, scale=0.5]{./figures/SIFT/diamondNeutral SIFT.png}}
-        {\includegraphics[width=10mm, scale=0.5]{./figures/SIFT/diamond75 SIFT.png}}
-        {\includegraphics[width=10mm, scale=0.5]{./figures/SIFT/diamond50 SIFT.png}}
+        {\includegraphics[width=30mm, scale=0.5]{./figures/SIFT/DugongNeutral SIFT.png}}
+        {\includegraphics[width=10mm, scale=0.5]{./figures/SIFT/DugongDeg 90 SIFT.png}}
+        {\includegraphics[width=10mm, scale=0.5]{./figures/SIFT/DugongDeg -90 SIFT.png}}
     }
     \centerline{
-        {\includegraphics[width=10mm, scale=0.5]{./figures/SIFT/diamondheightReduced SIFT.png}}
-        {\includegraphics[width=5mm, scale=0.5]{./figures/SIFT/diamondwidthReduced SIFT.png}}
+        {\includegraphics[width=30mm, scale=0.5]{./figures/SIFT/Dugong180 Deg SIFT.png}}
+        {\includegraphics[width=30mm, scale=0.5]{./figures/SIFT/DugongDeg -45 SIFT.png}}
+        {\includegraphics[width=30mm, scale=0.5]{./figures/SIFT/DugongDeg 45 SIFT.png}}
+    }
+    \caption{Dugong SIFT Detections (Neutral, -90\degree, 90\degree, 180\degree, -45\degree and 45\degree)\\*
+    Although hard to see, all 5 images successfully detect the same features.}
+    \label{fig}
+\end{figure}
+Rotation: \\*
+As you can see from the above results, SIFT is rotation invariant as it detects the same points at each rotation.
+\begin{figure}[H]
+    \centerline{
+        {\includegraphics[width=20mm, scale=0.5]{./figures/SIFT/diamondNeutral SIFT.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/SIFT/diamond75 SIFT.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/SIFT/diamond50 SIFT.png}}
+    }
+    \centerline{
+        {\includegraphics[width=30mm, scale=0.5]{./figures/SIFT/diamondheightReduced SIFT.png}}
+        {\includegraphics[width=10mm, scale=0.5]{./figures/SIFT/diamondwidthReduced SIFT.png}}
     }
     \caption{Diamond Scaling SIFT: (Neutral, 75\%, 50\%, 50\% height, 50\% width)}
     \label{fig}
 \end{figure}
-\\* Scale: \\*
+\begin{figure}[H]
+    \centerline{
+        {\includegraphics[width=25mm, scale=0.5]{./figures/SIFT/DugongNeutral SIFT.png}}
+        {\includegraphics[width=25mm, scale=0.5]{./figures/SIFT/Dugong75 SIFT.png}}
+        {\includegraphics[width=25mm, scale=0.5]{./figures/SIFT/Dugong50 SIFT.png}}
+    }
+    \centerline{
+        {\includegraphics[width=25mm, scale=0.5]{./figures/SIFT/DugongheightReduced SIFT.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/SIFT/DugongwidthReduced SIFT.png}}
+    }
+    \caption{Dugong Scaling SIFT: (Neutral, 75\%, 50\%, 50\% height, 50\% width)\\*
+    Although hard to see, the same features are mostly detected.}
+    \label{fig}
+\end{figure}
+Scale: \\*
 Sift appears to be mostly scale invariant based on my results above, so I can only conclude that it is scale invariant.
 
 \section{Task Two}
@@ -209,30 +292,54 @@ SIFT will then assign a descriptor to a region to describe the region.
 For the Dugong and Diamond image I generated images at various rotations (0\degree, 180\degree, -90\degree, 90\degree)\\*
 and at various scales. (100\%, 50\%, 50\% width, 50\% height) (For the diamond I selected a number, for the dugong I selected the dugong)
 \subsection{Hog Variancy}
-To test for HOG Variancy I was unsure how to calculate or visualise how variant it was so I used the rule of H0 - H1 where H0 is hog feature of original images and H1 is hog feature of new image, and if the distance is less than H0 value then its not variant.
-For both scaled and rotated images 'Transformation is invariant as distance is relatively small compared to norm of H0' was output by my tests, however, after some research I believe this is wrong as it is meant to be invariant.
+To test for HOG Variancy I simply took a feature H0 of the neutral image and then for each generated image took a feature H1.
+I calculated the length via the formula normalize(H0 - H1) and checked if that was valid within a tolerance -1.0 to 1.0, if it was then
+I concluded it was invariant, else it is variant.\\*
+\textbf{Rotation: }Hog was found to be variant for rotation for both the card feature and dugong feature at rotations 90\degree 180\degree and -90\degree.\\*
+\textbf{Scale: }Hog was found to be variant for scale for both the card feature and dugong feature at scales 75\%, 50\%, 50\% width, 50\% height.
 \subsection{SIFT Variancy}
-\begin{figure}[htbp]
+\textbf{Rotation: }
+\begin{figure}[H]
     \centerline{
-        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/90deg-card-SIFT.png}}
-        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/180deg-card-SIFT.png}}
-        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/n90deg-card-SIFT.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/dugong-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/dugong90-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/dugongn90-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/dugong180-sift.png}}
     }
     \centerline{
-        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/50w50h-dugong-sift.png}}
-        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/1w50h-dugong-sift.png}}
-        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/50w1h-dugong-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/card-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/card90-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/cardn90-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/card180-sift.png}}
     }
-    \caption{SIFT Variancy (First 3: Rotations (90\degree, 180\degree, -90\degree) Last 3: Scaled (50\%, 50\% Height, 50\% Width))}
+    \caption{Sift Variancy For Rotation. (First Row is Dugong 0\degree, 90\degree, -90\degree, 180\degree)\\*
+    (Second Row is Card 0\degree, 90\degree, -90\degree, 180\degree)}
     \label{fig}
 \end{figure}
-The histograms above conclude that while SIFT is rotationally invariant it appears that SIFT is not scale invariant, however, I would have to say that
-something is wrong with my code as SIFT stands for 'SCALE' invariant feature detection, so it should be scale invariant...
-
+The images above show that SIFT is invariant to rotation.\\*
+\textbf{Scale: }
+\begin{figure}[H]
+    \centerline{
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/dugong-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/dugong50pc-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/dugong25pc-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/dugong50w-sift.png}}
+    }
+    \centerline{
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/card-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/card50pc-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/card25pc-sift.png}}
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 2/card50w-sift.png}}
+    }
+    \caption{Sift Variancy For Scale. (First Row is Dugong 100\%, 50\%, 25\%, 50\% width)\\*
+    (Second Row is Card 100\%, 50\%, 25\%, 50\% width)}
+    \label{fig}
+\end{figure}
+The images above show that SIFT is invariant to scale.
 \section{Task Three}
 \subsection{Seperate Of Images Into Binary Images}
 * Note: You can see them as binary numbers in the relevant .txt file.
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centerline{
         {\includegraphics[width=20mm, scale=0.5]{./figures/task 3/Diamond.png}}
         {\includegraphics[width=40mm, scale=0.5]{./figures/task 3/BinaryImage.png}}
@@ -241,8 +348,16 @@ something is wrong with my code as SIFT stands for 'SCALE' invariant feature det
     \label{fig}
 \end{figure}
 Above you can see my seperation of the foreground (White) and background (Black), you can also see it saved as a txt file where 1 is foreground, 0 is background in my source code out\_files folder.
+\begin{figure}[H]
+    \centerline{
+        {\includegraphics[width=20mm, scale=0.5]{./figures/task 3/card/detectedObjectsCCL.png}}
+        {\includegraphics[width=50mm, scale=0.5]{./figures/task 3/dugong/detectedObjectsCCL.png}}
+    }
+    \caption{CCL seperated images, each object is a different color.}
+    \label{fig}
+\end{figure}
 \subsection{Card Objects}
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centerline{
         {\includegraphics[width=20mm, scale=0.5]{./figures/task 3/card/DetectedObject-1.png}}
         {\includegraphics[width=20mm, scale=0.5]{./figures/task 3/card/DetectedObject-2.png}}
@@ -258,7 +373,7 @@ Above you can see my seperation of the foreground (White) and background (Black)
 \end{figure}
 Using the Connected-Component Labelling algorithm (two-pass) I seperated the card into 8 objects: the border, the card's background, the four diamonds and the two 2s.
 \subsection{Dugong Objects} 
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centerline{
         {\includegraphics[width=20mm, scale=0.5]{./figures/task 3/dugong/DetectedObject-1.png}}
         {\includegraphics[width=5mm, scale=0.5]{./figures/task 3/dugong/DetectedObject-2.png}}
@@ -268,12 +383,12 @@ Using the Connected-Component Labelling algorithm (two-pass) I seperated the car
     \label{fig}
 \end{figure}
 Using the Connected-Component Labelling algorithm (two-pass) I seperated the card into 3 objects: The seaweed, dugong and calf and ocean.
-
+\pagebreak
 \section{Image Segmentation with K-Means}
 For each image I used HSV, LAB, RGB, XYZ, YUV colorspaces for each image.
 \subsection{Card}
-I tested card with 1, 2 and 3 clusters as >4 made no impact.
-\begin{figure}[htbp]
+I tested card with 1, 2 and 3 clusters as greater than 4 clusters made no impact for card image segmentation.
+\begin{figure}[H]
     \centerline{
         {\includegraphics[width=20mm, scale=0.5]{./figures/task 4/card/2 clusters HSV.png}}
         {\includegraphics[width=20mm, scale=0.5]{./figures/task 4/card/2 clusters LAB.png}}
@@ -287,7 +402,7 @@ After testing image segmentation with 1 cluster, 2 clusters, 3 clusters, 4 clust
 the only impacts on image, I also concluded that color spaces didn't really matter for this image as all colour spaces successfully
 segmented the card image at 2 clusters.
 \subsection{Dugong}
-\begin{figure}[htbp]
+\begin{figure}[H]
     \centerline{
         {\includegraphics[width=40mm, scale=0.5]{./figures/task 4/dugong/4 clusters HSV.png}}
         {\includegraphics[width=40mm, scale=0.5]{./figures/task 4/dugong/3 clusters YUV.png}}

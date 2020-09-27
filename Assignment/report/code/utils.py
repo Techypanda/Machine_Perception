@@ -2,10 +2,29 @@ import cv2 as cv
 import numpy as np
 from matplotlib import pyplot as plt
 import math
+import os
+
+def setup():
+  try:
+    os.mkdir("./out_files")
+    os.mkdir("./out_files/rotation")
+    os.mkdir("./out_files/scale")
+    os.mkdir("./out_files/task_2")
+    os.mkdir("./out_files/task_2/rotation")
+    os.mkdir("./out_files/task_2/scaled")
+    os.mkdir("./out_files/task_3")
+    os.mkdir("./out_files/task_3/card_objects")
+    os.mkdir("./out_files/task_3/dugong_objects")
+    os.mkdir("./out_files/task_4")
+    os.mkdir("./out_files/task_4/card")
+    os.mkdir("./out_files/task_4/dugong")
+  except FileExistsError:
+    print("Required Folders Exist")
+  except:
+    print("Unable to create required folders, please create them manually.")
 
 def rAngle(img, ang): # angle in radians.
-  canvas = np.zeros((int(img.shape[0] * 2), int(img.shape[1] * 2), 3), 
-    dtype=np.uint8)
+  canvas = np.zeros((int(img.shape[0] * 2), int(img.shape[1] * 2), 3), dtype=np.uint8)
   h, w, z = img.shape
   hh, ww, z = canvas.shape
   yoff = round((hh-h)/2)
@@ -16,8 +35,7 @@ def rAngle(img, ang): # angle in radians.
   degrees = (ang * 180) / math.pi
   center = tuple(np.array(img.shape[1::-1]) / 2)
   rotateMatrix = cv.getRotationMatrix2D(center, degrees, 1.0)
-  return cv.warpAffine(img, rotateMatrix, img.shape[1::-1],
-    flags=cv.INTER_LINEAR)
+  return cv.warpAffine(img, rotateMatrix, img.shape[1::-1], flags=cv.INTER_LINEAR)
 
 def scaleImg(img, widthScale, heightScale):
   newW = int(img.shape[1] * widthScale)
@@ -47,11 +65,39 @@ def toFile(arr, filename):
       file.write('\n')
 
 def hogVariation(H0, H1):
+  TOL = 1.0 # 0.0 - 1.0 is considered okay
   distance = cv.norm(H0 - H1)
-  if (distance <= cv.norm(H0)):
-    return "Transformation is invariant as distance is relatively small compared to norm of H0"
+  variant = distance >= -1 and distance <= 1.0
+  if (variant):
+    return """
+TOLERANCE: {0}
+H0 = {1}
+H1 = {2}
+Distance Between norm(h0 - h1) = {3}
+-1.0 <= Distance <= 1.0: {4}
+Transformation is invariant as distance is relatively small compared to norm of H0
+    """.format(
+      str(TOL), 
+      str(H0), 
+      str(H1), 
+      str(cv.norm(H0 - H1)), 
+      str(variant)
+    )
   else:
-    return "Transformation is variant as distance is not relatively small compared to norm of H0"
+    return """
+TOLERANCE: {0}
+H0 = {1}
+H1 = {2}
+Distance Between norm(h0 - h1) = {3}
+-1.0 <= Distance <= 1.0: {4}
+Transformation is variant as distance is not relatively small compared to norm of H0
+    """.format(
+      str(TOL), 
+      str(H0), 
+      str(H1), 
+      str(cv.norm(H0 - H1)), 
+      str(variant)
+    )
 
 
 def concon(arr):
