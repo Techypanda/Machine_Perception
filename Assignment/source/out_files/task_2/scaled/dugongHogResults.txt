@@ -34,7 +34,7 @@ H1 = [[0.05671508]
  [0.        ]
  [0.        ]
  [0.        ]]
-Distance Between norm(h0 - h1) = 7.106635748632586
+Distance Between norm(h0 - h1) = 7.106635759749573
 -1.0 <= Distance <= 1.0: False
 Transformation is variant as distance is not relatively small compared to norm of H0
     
@@ -54,7 +54,7 @@ H1 = [[0.23509154]
  [0.        ]
  [0.        ]
  [0.        ]]
-Distance Between norm(h0 - h1) = 7.227571202672755
+Distance Between norm(h0 - h1) = 7.227571219329861
 -1.0 <= Distance <= 1.0: False
 Transformation is variant as distance is not relatively small compared to norm of H0
     
@@ -74,7 +74,7 @@ H1 = [[0.09198603]
  [0.        ]
  [0.        ]
  [0.        ]]
-Distance Between norm(h0 - h1) = 6.355584042040168
+Distance Between norm(h0 - h1) = 6.355584043681649
 -1.0 <= Distance <= 1.0: False
 Transformation is variant as distance is not relatively small compared to norm of H0
     
@@ -94,7 +94,7 @@ H1 = [[0.09613796]
  [0.        ]
  [0.        ]
  [0.        ]]
-Distance Between norm(h0 - h1) = 6.576429845894074
+Distance Between norm(h0 - h1) = 6.576429864966381
 -1.0 <= Distance <= 1.0: False
 Transformation is variant as distance is not relatively small compared to norm of H0
     
