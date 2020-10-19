@@ -455,24 +455,21 @@ INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 
 INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/dugong/DetectedObject-3.png
 INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/dugong/DetectedObject-3.png
 INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/dugong/DetectedObject-3.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters HSV.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters HSV.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters HSV.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters LAB.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters LAB.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters LAB.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters RGB.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters RGB.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters RGB.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters XYZ.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters XYZ.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters XYZ.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/4 clusters HSV.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/4 clusters HSV.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/4 clusters HSV.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters YUV.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters YUV.png
-INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters YUV.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/3 clusters HSV.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/3 clusters HSV.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/3 clusters HSV.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/3 clusters LAB.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/3 clusters LAB.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/3 clusters LAB.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/3 clusters RGB.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/3 clusters RGB.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/3 clusters RGB.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters HSV.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters HSV.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters HSV.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters RGB.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters RGB.png
+INPUT y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters RGB.png
 INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT y:/machien perception/Machine_Perception/Assignment/report/./code/task_1.py

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.26)  27 SEP 2020 20:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.26)  4 OCT 2020 15:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -918,39 +918,34 @@ Package pdftex.def Info: ./figures/task 3/dugong/DetectedObject-3.png  used on i
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/dugong-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/dugong90-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/dugongn90-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/dugong180-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/card-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/card90-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/cardn90-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/card180-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/dugong50pc-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/dugong25pc-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/dugong50w-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/card50pc-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/card25pc-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 2/card50w-sift.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/Diamond.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/BinaryImage.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/detectedObjectsCCL.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/dugong/detectedObjectsCCL.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-1.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-2.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-3.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-4.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-5.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-6.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-7.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/card/DetectedObject-8.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/dugong/DetectedObject-1.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/dugong/DetectedObject-2.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 3/dugong/DetectedObject-3.png (PNG copy)>]
-<./figures/task 4/card/2 clusters HSV.png, id=136, 182.6825pt x 279.0425pt>
-File: ./figures/task 4/card/2 clusters HSV.png Graphic file (type png)
-<use ./figures/task 4/card/2 clusters HSV.png>
-Package pdftex.def Info: ./figures/task 4/card/2 clusters HSV.png  used on input line 397.
-(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
-<./figures/task 4/card/2 clusters LAB.png, id=137, 182.6825pt x 279.0425pt>
-File: ./figures/task 4/card/2 clusters LAB.png Graphic file (type png)
-<use ./figures/task 4/card/2 clusters LAB.png>
-Package pdftex.def Info: ./figures/task 4/card/2 clusters LAB.png  used on input line 397.
-(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
-<./figures/task 4/card/2 clusters RGB.png, id=138, 182.6825pt x 279.0425pt>
-File: ./figures/task 4/card/2 clusters RGB.png Graphic file (type png)
-<use ./figures/task 4/card/2 clusters RGB.png>
-Package pdftex.def Info: ./figures/task 4/card/2 clusters RGB.png  used on input line 397.
-(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
-<./figures/task 4/card/2 clusters XYZ.png, id=139, 182.6825pt x 279.0425pt>
-File: ./figures/task 4/card/2 clusters XYZ.png Graphic file (type png)
-<use ./figures/task 4/card/2 clusters XYZ.png>
-Package pdftex.def Info: ./figures/task 4/card/2 clusters XYZ.png  used on input line 397.
-(pdftex.def)             Requested size: 91.34102pt x 139.5209pt.
-<./figures/task 4/dugong/4 clusters HSV.png, id=140, 863.225pt x 481.8pt>
-File: ./figures/task 4/dugong/4 clusters HSV.png Graphic file (type png)
-<use ./figures/task 4/dugong/4 clusters HSV.png>
-Package pdftex.def Info: ./figures/task 4/dugong/4 clusters HSV.png  used on input line 409.
-(pdftex.def)             Requested size: 431.61145pt x 240.8994pt.
-<./figures/task 4/dugong/3 clusters YUV.png, id=141, 863.225pt x 481.8pt>
-File: ./figures/task 4/dugong/3 clusters YUV.png Graphic file (type png)
-<use ./figures/task 4/dugong/3 clusters YUV.png>
-Package pdftex.def Info: ./figures/task 4/dugong/3 clusters YUV.png  used on input line 409.
-(pdftex.def)             Requested size: 431.61145pt x 240.8994pt.
+<./figures/task 4/card/3 clusters HSV.png, id=136, 365.365pt x 1116.17pt>
+File: ./figures/task 4/card/3 clusters HSV.png Graphic file (type png)
+<use ./figures/task 4/card/3 clusters HSV.png>
+Package pdftex.def Info: ./figures/task 4/card/3 clusters HSV.png  used on input line 396.
+(pdftex.def)             Requested size: 182.68205pt x 558.08363pt.
+<./figures/task 4/card/3 clusters LAB.png, id=137, 365.365pt x 1116.17pt>
+File: ./figures/task 4/card/3 clusters LAB.png Graphic file (type png)
+<use ./figures/task 4/card/3 clusters LAB.png>
+Package pdftex.def Info: ./figures/task 4/card/3 clusters LAB.png  used on input line 396.
+(pdftex.def)             Requested size: 182.68205pt x 558.08363pt.
+<./figures/task 4/card/3 clusters RGB.png, id=138, 365.365pt x 1116.17pt>
+File: ./figures/task 4/card/3 clusters RGB.png Graphic file (type png)
+<use ./figures/task 4/card/3 clusters RGB.png>
+Package pdftex.def Info: ./figures/task 4/card/3 clusters RGB.png  used on input line 396.
+(pdftex.def)             Requested size: 182.68205pt x 558.08363pt.
+<./figures/task 4/dugong/3 clusters HSV.png, id=139, 1726.45pt x 1927.2pt>
+File: ./figures/task 4/dugong/3 clusters HSV.png Graphic file (type png)
+<use ./figures/task 4/dugong/3 clusters HSV.png>
+Package pdftex.def Info: ./figures/task 4/dugong/3 clusters HSV.png  used on input line 407.
+(pdftex.def)             Requested size: 863.2229pt x 963.59766pt.
+<./figures/task 4/dugong/3 clusters RGB.png, id=140, 1726.45pt x 1927.2pt>
+File: ./figures/task 4/dugong/3 clusters RGB.png Graphic file (type png)
+<use ./figures/task 4/dugong/3 clusters RGB.png>
+Package pdftex.def Info: ./figures/task 4/dugong/3 clusters RGB.png  used on input line 407.
+(pdftex.def)             Requested size: 863.2229pt x 963.59766pt.
  [5
 
- <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters HSV.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters LAB.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters RGB.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/2 clusters XYZ.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/4 clusters HSV.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters YUV.png (PNG copy)>] (c:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
+ <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/3 clusters HSV.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/3 clusters LAB.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/card/3 clusters RGB.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters HSV.png (PNG copy)> <y:/machien perception/Machine_Perception/Assignment/report/./figures/task 4/dugong/3 clusters RGB.png (PNG copy)>] (c:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (y:/machien perception/Machine_Perception/Assignment/report/./code/task_1.py
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 8.
@@ -1011,18 +1006,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8090 strings out of 480875
- 135104 string characters out of 5911456
- 760232 words of memory out of 5000000
- 23519 multiletter control sequences out of 15000+600000
+ 8106 strings out of 480875
+ 135201 string characters out of 5911456
+ 760173 words of memory out of 5000000
+ 23538 multiletter control sequences out of 15000+600000
  574506 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,8n,43p,410b,1819s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "y:/machien perception/Machine_Perception/Assignment/report/conference_101719.pdf" (18 pages, 6696213 bytes).
+Output written on "y:/machien perception/Machine_Perception/Assignment/report/conference_101719.pdf" (18 pages, 8798125 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
+ 217 PDF objects out of 1000 (max. 8388607)
  67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 496 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 491 words of extra memory for PDF output out of 10000 (max. 10000000)
 

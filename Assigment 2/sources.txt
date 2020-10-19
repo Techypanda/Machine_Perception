@@ -1,0 +1,1 @@
+https://medium.com/programming-fever/license-plate-recognition-using-opencv-python-7611f85cdd6c
