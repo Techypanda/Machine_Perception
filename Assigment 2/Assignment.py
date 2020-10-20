@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import argparse, os
-from Training import trainDigits
+import cv2 as cv
+from Training import trainDigits, testAccuracy
 
 def main():
   parser = argparse.ArgumentParser()
@@ -8,10 +9,7 @@ def main():
   args = parser.parse_args()
   if args.train_digits:
     trainDigits()
-
-
-
-
-
+  testAccuracy()
+  
 if __name__ == "__main__":
   main()
