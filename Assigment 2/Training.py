@@ -56,14 +56,14 @@ def testAccuracy(): #28 x 40
     if not os.path.isfile("./digits.dat"):
       raise Exception("SVM Model needs to be trained.")
     svm = cv.ml.SVM_load('./digits.dat')
-    digits = extractDigits("./test_data/val04.jpg")
+    digits = extractDigits("./training_data/number_plates/tr17.jpg")
     #returned = ''
-    print(len(digits))
-    for digit in digits:
+    # print(len(digits))
+    '''for digit in digits:
         cv.imshow('t', cv.resize(digit[0], (28, 40)))
         cv.waitKey()
         print('classifying')
         result = np.float32(hog(deskew(cv.resize(digit[0], (28, 40))))).reshape(1, -1)
         test = svm.predict(result)
         print(test)
-        cv.destroyAllWindows()
+        cv.destroyAllWindows()'''
