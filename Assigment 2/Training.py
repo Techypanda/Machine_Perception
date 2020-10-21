@@ -56,7 +56,7 @@ def testAccuracy(): #28 x 40
     if not os.path.isfile("./digits.dat"):
       raise Exception("SVM Model needs to be trained.")
     svm = cv.ml.SVM_load('./digits.dat')
-    digits = extractDigits("./training_data/number_plates/tr17.jpg")
+    digits = extractDigits("./training_data/number_plates/tr05.jpg")
     #returned = ''
     # print(len(digits))
     '''for digit in digits:

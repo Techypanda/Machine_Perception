@@ -7,12 +7,12 @@ def colorReduce(img): # credits to @eliezer-bernart: https://stackoverflow.com/q
 def extractDigits(path):
     img = cv.imread(path, cv.IMREAD_COLOR)
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-    gray = cv.GaussianBlur(gray,(17,15),0)
-    edges = cv.Canny(gray, 100, 225)    
-    edges = cv.morphologyEx(edges, cv.MORPH_CLOSE, np.ones((4,5), np.uint8))
-    edges = cv.dilate(edges, np.ones((4,4), np.uint8))
+    gray = cv.GaussianBlur(gray,(19,17),0)
+    edges = cv.Canny(gray, 100, 175)    
+    edges = cv.morphologyEx(edges, cv.MORPH_CLOSE, np.ones((5,7), np.uint8))
+    edges = cv.dilate(edges, np.ones((2,2), np.uint8))
     image, contours, hierarchy = cv.findContours(edges, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
-    contours = [ cnt for cnt in contours if cv.contourArea(cnt) > 750 ]
+    contours = [ cnt for cnt in contours if cv.contourArea(cnt) > 100 ]
     acceptable = []
     for cnt in contours:
             if len(contours) > 1:
@@ -33,7 +33,6 @@ def extractDigits(path):
                 if h < (img.shape[1] * 0.95):
                     acceptable.append(cnt)
     #cv.drawContours(img, [cnt], 0, (0,255,0), 3)
-    
     if len(acceptable) > 1: # find pairs
         pairs = dict()
         for i in range(len(acceptable)):
@@ -41,19 +40,19 @@ def extractDigits(path):
                 if k < len(acceptable):
                     x,y,w,h = cv.boundingRect(acceptable[i])
                     x2,y2,w2,h2 = cv.boundingRect(acceptable[k])
-                    if abs(w - w2) <= 25 and abs(h - h2) <= 20:
-                        pairs[i] = acceptable[i]
-                        pairs[k] = acceptable[k]
+                    if abs(w - w2) <= 25 and abs(h - h2) <= 20 and abs(x - x2) <= (image.shape[1] * 0.20):
+                            pairs[i] = acceptable[i]
+                            pairs[k] = acceptable[k]
         if len(pairs) > 1:
-            print(len(pairs))
+            #print(len(pairs))
             acceptable = pairs.values()
     
-    for cnt in contours:
+    for cnt in acceptable:
         cv.drawContours(img, [cnt], 0, (0,255,0), 3)
         cv.imshow('contours', img)
         cv.waitKey()
 
-    print(len(acceptable))
+   # print(len(acceptable))
     cv.imshow('contours', img)
     cv.imshow('edges', edges)
     cv.waitKey()
