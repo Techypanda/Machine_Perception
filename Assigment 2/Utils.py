@@ -7,13 +7,14 @@ def colorReduce(img): # credits to @eliezer-bernart: https://stackoverflow.com/q
 def extractDigits(path):
     img = cv.imread(path, cv.IMREAD_COLOR)
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-    gray = cv.GaussianBlur(gray,(19,17),0)
-    edges = cv.Canny(gray, 100, 175)    
-    edges = cv.morphologyEx(edges, cv.MORPH_CLOSE, np.ones((5,7), np.uint8))
+    gray = cv.GaussianBlur(gray,(17,17),0)
+    edges = cv.Canny(gray, 120, 160)    
+    edges = cv.morphologyEx(edges, cv.MORPH_CLOSE, np.ones((5,6), np.uint8))
     edges = cv.dilate(edges, np.ones((2,2), np.uint8))
     image, contours, hierarchy = cv.findContours(edges, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
     contours = [ cnt for cnt in contours if cv.contourArea(cnt) > 100 ]
     acceptable = []
+
     for cnt in contours:
             if len(contours) > 1:
                 x,y,w,h = cv.boundingRect(cnt)
@@ -21,10 +22,71 @@ def extractDigits(path):
                 heightWidthRatio = h / w
                 if w < (img.shape[1] * 0.95):
                     if widthHeightRatio <= 1.5:
-                         if heightWidthRatio <= 3.5:
+                        if heightWidthRatio <= 3.5:
                             acceptable.append(cnt)
             else:
                 acceptable.append(cnt)
+
+    if len(acceptable) == 1: # Assume it is a plate and try looking inside
+        x, y, w, h = cv.boundingRect(acceptable[0])
+        target = img[y:y+h, x:x+w]
+        gray = cv.cvtColor(target, cv.COLOR_BGR2GRAY)
+        gray = cv.GaussianBlur(gray, (17, 15), 0)
+        edges = cv.Canny(gray, 120, 175)
+        edges = cv.morphologyEx(edges, cv.MORPH_CLOSE, np.ones((5,5), np.uint8))
+        edges = cv.dilate(edges, np.ones((2,2), np.uint8))
+
+        image, contours, hierarchy = cv.findContours(edges, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
+
+        contours = [ cnt for cnt in contours if cv.contourArea(cnt) > 100 ]
+        acceptable = []
+        for cnt in contours:
+            if len(contours) > 1:
+                x2,y2,w2,h2 = cv.boundingRect(cnt)
+                widthHeightRatio = w2 / h2
+                heightWidthRatio = h2 / w2
+                if w2 < (w * 0.95):
+                    if h2 < (h * 0.95):
+                        if widthHeightRatio <= 1.5:
+                            if heightWidthRatio <= 3.5:
+                                acceptable.append(cnt)
+            else:
+                acceptable.append(cnt)
+
+        detected = []
+        for cnt in acceptable:
+            x2,y2,w2,h2 = cv.boundingRect(cnt)
+            yPos = y+y2
+            xPos = x+x2
+            detected.append(
+                (
+                    (xPos, yPos),
+                    (w2, h2)
+                )    
+            )
+        detected.sort(key=lambda x: x[0][0])
+        targets = []
+        total_width = 0
+        total_height = 0
+        previous_x = detected[0][0][0]
+        highest_y = detected[0][0][1]
+        for cnt in detected:
+            targets.append(
+                (img[cnt[0][1]:cnt[0][1]+cnt[1][1], cnt[0][0]:cnt[0][0]+cnt[1][0]]) # the target
+            )
+            total_width += cnt[1][0] + abs(previous_x - cnt[0][0])
+            total_height = cnt[1][1] if cnt[1][1] > total_height else total_height
+            highest_y = cnt[0][1] if cnt[0][1] < highest_y else highest_y
+        plate = img[
+            (cnt[0][1]-10):(cnt[0][1]-10)+total_height+10,
+            (cnt[0][0]-10):(cnt[0][0]-10)+total_width+10
+        ]
+        xStart = detected[0][0][0]
+        xEnd = detected[-1][0][0]
+        yPlate = highest_y
+        plate = img[yPlate:yPlate+total_height, xStart:xStart + xEnd]
+        detected = (targets, plate) # 0 list of sorted numbers.
+        return detected
 
     if len(acceptable) == 0: # just find a decent plate i guess
         for cnt in contours:
@@ -32,7 +94,6 @@ def extractDigits(path):
             if w < (img.shape[1] * 0.95):
                 if h < (img.shape[1] * 0.95):
                     acceptable.append(cnt)
-    #cv.drawContours(img, [cnt], 0, (0,255,0), 3)
     if len(acceptable) > 1: # find pairs
         pairs = dict()
         for i in range(len(acceptable)):
@@ -40,70 +101,46 @@ def extractDigits(path):
                 if k < len(acceptable):
                     x,y,w,h = cv.boundingRect(acceptable[i])
                     x2,y2,w2,h2 = cv.boundingRect(acceptable[k])
-                    if abs(w - w2) <= 25 and abs(h - h2) <= 20 and abs(x - x2) <= (image.shape[1] * 0.20):
+                    if abs(w - w2) <= 30 and abs(h - h2) <= 15 and abs(x - x2) <= (image.shape[1] * 0.30):
                             pairs[i] = acceptable[i]
                             pairs[k] = acceptable[k]
         if len(pairs) > 1:
-            #print(len(pairs))
-            acceptable = pairs.values()
-    
+            acceptable = list(pairs.values())
+
+    contours = []
     for cnt in acceptable:
-        cv.drawContours(img, [cnt], 0, (0,255,0), 3)
-        cv.imshow('contours', img)
-        cv.waitKey()
+        x,y,w,h = cv.boundingRect(cnt)
+        contours.append(
+                (
+                    (x, y),
+                    (w, h)
+                )    
+            )
 
-   # print(len(acceptable))
-    cv.imshow('contours', img)
-    cv.imshow('edges', edges)
-    cv.waitKey()
-    '''
-    def detectContours(i, METHOD):
-        valid_contours = []
-        image, contours, hierarchy = cv.findContours(i, METHOD, cv.CHAIN_APPROX_SIMPLE)
-        height_max = img.shape[0] * 0.95
-        width_max = img.shape[1] * 0.95
-        height_min = img.shape[0] * 0.15
-        width_min = img.shape[1] * 0.15
-        for cnt in contours:
-            x,y,w,h = cv.boundingRect(cnt)
-            if w > width_max or w < width_min:
-                continue
-            if h > height_max or h < height_min:
-                continue
-            valid_contours.append(cnt)
-        
-        return valid_contours
-    
-    img = cv.imread(path)
-    gray = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
-    blur = cv.GaussianBlur(gray,(11,11),0)
-    thresh   = cv.threshold(blur, 200, 255, cv.THRESH_BINARY_INV + cv.THRESH_OTSU)[1]
-    thresh = cv.erode(thresh, np.ones((5,5), np.uint8))
-    cv.imshow('thresh', thresh)
-    cv.waitKey()
+    contours.sort(key=lambda cnt: cnt[0][0])
+    targets = []
+    total_width = 0
+    total_height = 0
+    previous_x = contours[0][0][0]
+    highest_y = contours[0][0][1]
+    for cnt in contours:
+            targets.append(
+                (img[cnt[0][1]:cnt[0][1]+cnt[1][1], cnt[0][0]:cnt[0][0]+cnt[1][0]]) # the target
+            )
+            total_width += cnt[1][0] + abs(previous_x - cnt[0][0])
+            total_height = cnt[1][1] if cnt[1][1] > total_height else total_height
+            highest_y = cnt[0][1] if cnt[0][1] < highest_y else highest_y
+            plate = img[
+                    (cnt[0][1]-10):(cnt[0][1]-10)+total_height+10,
+                    (cnt[0][0]-10):(cnt[0][0]-10)+total_width+10
+            ]
+            xStart = contours[0][0][0]
+            xEnd = contours[-1][0][0] + contours[-1][1][0]
+            widthh = abs(xEnd - xStart)
+            print(xStart)
+            print(xEnd)
+            yPlate = highest_y
+            plate = img[yPlate:yPlate+total_height, xStart:xStart+widthh]
 
-    valid_contours = detectContours(thresh, cv.RETR_EXTERNAL)
-    if len(valid_contours) == 1:
-        x,y,w,h = cv.boundingRect(valid_contours[0])
-        selected = thresh[y:y+h, x:x+w]
-        img = img[y:y+h, x:x+w]
-
-        valid_contours_2 = detectContours(selected, cv.RETR_TREE)
-        if len(valid_contours_2) != 0:
-            valid_contours = valid_contours_2
-    if len(valid_contours) == 0:
-        valid_contours = detectContours(thresh, cv.RETR_TREE)
-
-    for cnt in valid_contours:
-        img = cv.drawContours(img, [cnt], 0, (0,255,0), 3)
-
-    cv.imshow('img', img)
-    cv.waitKey()'''
-        #if h < image.shape[0] * 0.20 or h > image.shape[0] * 0.80:
-        #    break
-        #if w < image.shape[1] * 0.15 or w > image.shape[1] * 0.80:
-        #    break
-        #if cv.contourArea(cnt) > image_area:
-        #    img = cv.drawContours(img, [cnt], 0, (0,255,0), 3)
-        #    cv.imshow('img', img)
-         #   cv.waitKey()
+    detected = (targets, plate) # 0 list of sorted numbers.
+    return detected

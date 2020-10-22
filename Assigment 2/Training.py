@@ -1,4 +1,5 @@
 import os
+import time
 import cv2 as cv
 import numpy as np
 from Utils import extractDigits
@@ -30,7 +31,7 @@ def hog(img):
 
 def trainDigits():
     digits = {}
-    for dirpath, dirnames, filenames in os.walk("./training_data/digits"):
+    for dirpath, dirnames, filenames in os.walk("./train/digits"):
         if len(filenames) > 0:
             digits[dirpath[-1]] = [] # [0 - 9] = ... ROWS
             for image in filenames:
@@ -56,14 +57,14 @@ def testAccuracy(): #28 x 40
     if not os.path.isfile("./digits.dat"):
       raise Exception("SVM Model needs to be trained.")
     svm = cv.ml.SVM_load('./digits.dat')
-    digits = extractDigits("./training_data/number_plates/tr05.jpg")
-    #returned = ''
-    # print(len(digits))
-    '''for digit in digits:
-        cv.imshow('t', cv.resize(digit[0], (28, 40)))
-        cv.waitKey()
-        print('classifying')
-        result = np.float32(hog(deskew(cv.resize(digit[0], (28, 40))))).reshape(1, -1)
-        test = svm.predict(result)
-        print(test)
-        cv.destroyAllWindows()'''
+    digits = extractDigits("./training_data/number_plates/tr04.jpg") # 12, 13, 15, 16, 17, 19, 20, 21, 23, 24, 25 dont work and i just ceebs.
+    print('showing plate')
+    cv.imshow('plate', digits[1])
+    cv.waitKey()
+    print('reading plate...')
+    reading = ""
+    for target in digits[0]:
+        gray = cv.resize(cv.cvtColor(target, cv.COLOR_BGR2GRAY), (28,40))
+        prediction = int(svm.predict(np.float32(hog(deskew(gray))).reshape(1,-1))[1][0][0])
+        reading += str(prediction)
+    print(reading)

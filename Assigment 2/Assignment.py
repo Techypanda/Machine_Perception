@@ -4,6 +4,12 @@ import cv2 as cv
 from Training import trainDigits, testAccuracy
 
 def main():
+  try:
+      os.makedirs("output")
+      os.makedirs("train")
+      os.makedirs("test")
+  except Exception as e:
+      pass
   parser = argparse.ArgumentParser()
   parser.add_argument("-td", '--train_digits', action="store_true", help="this will begin the training process for digits.")
   args = parser.parse_args()
