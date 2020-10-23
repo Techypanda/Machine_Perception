@@ -1,5 +1,13 @@
 import cv2 as cv
 import numpy as np
+import os
+
+# Makes a folder, doesnt care if it fails.
+def makeFolder(name):
+    try:
+      os.makedirs(name)
+    except Exception as e:
+      pass
 
 def colorReduce(img): # credits to @eliezer-bernart: https://stackoverflow.com/questions/5906693/how-to-reduce-the-number-of-colors-in-an-image-with-opencv/20715062#20715062
     return img // 64 * 64 + 64 // 2
@@ -85,7 +93,7 @@ def extractDigits(path):
         xEnd = detected[-1][0][0]
         yPlate = highest_y
         plate = img[yPlate:yPlate+total_height, xStart:xStart + xEnd]
-        detected = (targets, plate) # 0 list of sorted numbers.
+        detected = [targets, plate, [xStart, yPlate, total_width, total_height]] # 0 list of sorted numbers.
         return detected
 
     if len(acceptable) == 0: # just find a decent plate i guess
@@ -137,10 +145,8 @@ def extractDigits(path):
             xStart = contours[0][0][0]
             xEnd = contours[-1][0][0] + contours[-1][1][0]
             widthh = abs(xEnd - xStart)
-            print(xStart)
-            print(xEnd)
             yPlate = highest_y
             plate = img[yPlate:yPlate+total_height, xStart:xStart+widthh]
 
-    detected = (targets, plate) # 0 list of sorted numbers.
+    detected = [targets, plate, [xStart, yPlate, widthh, total_height]] # 0 list of sorted numbers.
     return detected

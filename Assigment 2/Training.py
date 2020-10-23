@@ -30,6 +30,7 @@ def hog(img):
     return hist
 
 def trainDigits():
+    start = time.time()
     digits = {}
     for dirpath, dirnames, filenames in os.walk("./train/digits"):
         if len(filenames) > 0:
@@ -52,19 +53,34 @@ def trainDigits():
     svm.setGamma(5.383)
     svm.train(train_data, cv.ml.ROW_SAMPLE, labels)
     svm.save('digits.dat')
+    end = time.time()
+    print("Completed training on SVM model in {} seconds.".format(end - start))
 
-def testAccuracy(): #28 x 40
+def validation(): # sort out the output name eventually.
     if not os.path.isfile("./digits.dat"):
       raise Exception("SVM Model needs to be trained.")
     svm = cv.ml.SVM_load('./digits.dat')
-    digits = extractDigits("./training_data/number_plates/tr04.jpg") # 12, 13, 15, 16, 17, 19, 20, 21, 23, 24, 25 dont work and i just ceebs.
-    print('showing plate')
-    cv.imshow('plate', digits[1])
-    cv.waitKey()
-    print('reading plate...')
-    reading = ""
-    for target in digits[0]:
-        gray = cv.resize(cv.cvtColor(target, cv.COLOR_BGR2GRAY), (28,40))
-        prediction = int(svm.predict(np.float32(hog(deskew(gray))).reshape(1,-1))[1][0][0])
-        reading += str(prediction)
-    print(reading)
+    for dirpath, dirnames, filenames in os.walk("./val"): break
+    valImages = [ dirpath + '/' + filenames[i] for i in range(len(filenames)) ]
+    actual = ["48", "35", "94", "302", "71", "26"]
+    correct = 0
+    start = time.time()
+    for i in range(len(valImages)):
+        cv.imwrite('./output/validation/DetectedArea{}.jpg'.format(i), digits[1])
+        with open("./output/validation/BoundingBox{}.txt".format(i), 'w') as f:
+            f.write("{} x, {} y, {} w, {} h".format(str(digits[2][0]), str(digits[2][1]), str(digits[2][2]), str(digits[2][3])))
+        reading = ""
+        for target in digits[0]:
+            gray = cv.resize(cv.cvtColor(target, cv.COLOR_BGR2GRAY), (28,40))
+            prediction = int(svm.predict(np.float32(hog(deskew(gray))).reshape(1,-1))[1][0][0])
+            reading += str(prediction)
+        if reading == actual[i]:
+            correct += 1
+        with open("./output/validation/House{}.txt".format(i), 'w') as f:
+            f.write("Building {}".format(reading))
+    end = time.time()
+    accuracy = str((float(correct) / float(len(actual))) * 100.0)+"%"
+    print("Completed validation in {} seconds.\nAccuracy: {}".format(end - start, accuracy))
+
+def test(): #28 x 40
+    extractDigits('./test/tr01.jpg')
