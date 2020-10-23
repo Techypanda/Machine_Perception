@@ -1,0 +1,3 @@
+# Ignore The Output Folder (Its Generated on Run) also ignore digits.dat
+digits.dat
+output
