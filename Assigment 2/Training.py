@@ -1,4 +1,5 @@
 import os
+import re
 import time
 import cv2 as cv
 import numpy as np
@@ -66,8 +67,10 @@ def validation(): # sort out the output name eventually.
     correct = 0
     start = time.time()
     for i in range(len(valImages)):
-        cv.imwrite('./output/validation/DetectedArea{}.jpg'.format(i), digits[1])
-        with open("./output/validation/BoundingBox{}.txt".format(i), 'w') as f:
+        digits = extractDigits(valImages[i])
+        z = re.search("(\d+)(\.(.+))\Z", valImages[i])[1]
+        cv.imwrite('./output/validation/DetectedArea{}.jpg'.format(z), digits[1])
+        with open("./output/validation/BoundingBox{}.txt".format(z), 'w') as f:
             f.write("{} x, {} y, {} w, {} h".format(str(digits[2][0]), str(digits[2][1]), str(digits[2][2]), str(digits[2][3])))
         reading = ""
         for target in digits[0]:
@@ -76,11 +79,32 @@ def validation(): # sort out the output name eventually.
             reading += str(prediction)
         if reading == actual[i]:
             correct += 1
-        with open("./output/validation/House{}.txt".format(i), 'w') as f:
+        with open("./output/validation/House{}.txt".format(z), 'w') as f:
             f.write("Building {}".format(reading))
     end = time.time()
     accuracy = str((float(correct) / float(len(actual))) * 100.0)+"%"
     print("Completed validation in {} seconds.\nAccuracy: {}".format(end - start, accuracy))
 
-def test(): #28 x 40
-    extractDigits('./test/tr01.jpg')
+def test(): #28 x 40 
+    start = time.time()
+    print('Running Tests...')
+    if not os.path.isfile("./digits.dat"):
+      raise Exception("SVM Model needs to be trained.")
+    svm = cv.ml.SVM_load('./digits.dat')
+    for dirpath, dirnames, filenames in os.walk("./test"): break
+    images = [ dirpath + '/' + filenames[i] for i in range(len(filenames)) ]
+    for image in images:
+        digits = extractDigits(image)
+        if len(digits) > 0:
+            z = re.search("(\d+)(\.(.+))\Z", image)[1]
+            cv.imwrite('./output/DetectedArea{}.jpg'.format(z), digits[1])
+            with open("./output/BoundingBox{}.txt".format(z), 'w') as f:
+                f.write("{} x, {} y, {} w, {} h".format(str(digits[2][0]), str(digits[2][1]), str(digits[2][2]), str(digits[2][3])))
+            reading = ""
+            for target in digits[0]:
+                gray = cv.resize(cv.cvtColor(target, cv.COLOR_BGR2GRAY), (28,40))
+                prediction = int(svm.predict(np.float32(hog(deskew(gray))).reshape(1,-1))[1][0][0])
+                reading += str(prediction)
+            with open("./output/House{}.txt".format(z), 'w') as f:
+                f.write("Building {}".format(reading))
+    print('Tests Concluded in {} seconds.'.format(time.time() - start))

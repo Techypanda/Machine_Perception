@@ -15,12 +15,12 @@ def colorReduce(img): # credits to @eliezer-bernart: https://stackoverflow.com/q
 def extractDigits(path):
     img = cv.imread(path, cv.IMREAD_COLOR)
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
-    gray = cv.GaussianBlur(gray,(17,17),0)
-    edges = cv.Canny(gray, 120, 160)    
-    edges = cv.morphologyEx(edges, cv.MORPH_CLOSE, np.ones((5,6), np.uint8))
-    edges = cv.dilate(edges, np.ones((2,2), np.uint8))
+    gray = cv.GaussianBlur(gray,(15,17),0)
+    edges = cv.Canny(gray, 115, 160)    
+    edges = cv.morphologyEx(edges, cv.MORPH_CLOSE, np.ones((5,5), np.uint8))
+    edges = cv.dilate(edges, np.ones((2, 2), np.uint8))
     image, contours, hierarchy = cv.findContours(edges, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE)
-    contours = [ cnt for cnt in contours if cv.contourArea(cnt) > 100 ]
+    contours = [ cnt for cnt in contours if cv.contourArea(cnt) > 150 ]
     acceptable = []
 
     for cnt in contours:
@@ -30,11 +30,10 @@ def extractDigits(path):
                 heightWidthRatio = h / w
                 if w < (img.shape[1] * 0.95):
                     if widthHeightRatio <= 1.5:
-                        if heightWidthRatio <= 3.5:
+                        if heightWidthRatio <= 4.8:
                             acceptable.append(cnt)
             else:
                 acceptable.append(cnt)
-
     if len(acceptable) == 1: # Assume it is a plate and try looking inside
         x, y, w, h = cv.boundingRect(acceptable[0])
         target = img[y:y+h, x:x+w]
@@ -60,7 +59,7 @@ def extractDigits(path):
                                 acceptable.append(cnt)
             else:
                 acceptable.append(cnt)
-
+        
         detected = []
         for cnt in acceptable:
             x2,y2,w2,h2 = cv.boundingRect(cnt)
@@ -76,13 +75,15 @@ def extractDigits(path):
         targets = []
         total_width = 0
         total_height = 0
+        if len(detected) == 0:
+            return []
         previous_x = detected[0][0][0]
         highest_y = detected[0][0][1]
         for cnt in detected:
             targets.append(
                 (img[cnt[0][1]:cnt[0][1]+cnt[1][1], cnt[0][0]:cnt[0][0]+cnt[1][0]]) # the target
             )
-            total_width += cnt[1][0] + abs(previous_x - cnt[0][0])
+            total_width += cnt[1][0]
             total_height = cnt[1][1] if cnt[1][1] > total_height else total_height
             highest_y = cnt[0][1] if cnt[0][1] < highest_y else highest_y
         plate = img[
@@ -91,6 +92,7 @@ def extractDigits(path):
         ]
         xStart = detected[0][0][0]
         xEnd = detected[-1][0][0]
+        widthh = xStart + xEnd
         yPlate = highest_y
         plate = img[yPlate:yPlate+total_height, xStart:xStart + xEnd]
         detected = [targets, plate, [xStart, yPlate, total_width, total_height]] # 0 list of sorted numbers.
@@ -109,11 +111,30 @@ def extractDigits(path):
                 if k < len(acceptable):
                     x,y,w,h = cv.boundingRect(acceptable[i])
                     x2,y2,w2,h2 = cv.boundingRect(acceptable[k])
-                    if abs(w - w2) <= 30 and abs(h - h2) <= 15 and abs(x - x2) <= (image.shape[1] * 0.30):
+                    if abs(w - w2) <= 30 and abs(h - h2) <= 15 and abs(y-y2) <= 15 and abs(x - x2) <= (image.shape[1] * 0.30):
                             pairs[i] = acceptable[i]
                             pairs[k] = acceptable[k]
         if len(pairs) > 1:
             acceptable = list(pairs.values())
+
+    not_inside = [] # Check no numbers on same x, as i assume vertical signs will not occur, bad assumption but im doin git
+    for i in range(len(acceptable)):
+            ni = False
+            for k in range(i+1, len(acceptable)):
+                if k < len(acceptable):
+                    x,y,w,h = cv.boundingRect(acceptable[i])
+                    x2,y2,w2,h2 = cv.boundingRect(acceptable[k])
+                    if x > x2 and x < x2 + w2:
+                            # keep the bigger one.
+                            a = w * h
+                            a2 = w2 * h2
+                            print(a)
+                            print(a2)
+                            if a < a2:
+                                    ni = True
+            if ni == False:
+                not_inside.append(acceptable[i])
+    acceptable = not_inside
 
     contours = []
     for cnt in acceptable:
