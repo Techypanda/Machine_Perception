@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import argparse
 import os
 import cv2 as cv
