@@ -2,20 +2,22 @@ import cv2 as cv
 import numpy as np
 import os
 
-# Makes a folder, doesnt care if it fails.
-
-
+'''
+    Purpose: Make a folder, dont care if it fails.
+    Date: 24/10/2020
+    Author: Jonathan Wright 19779085
+'''
 def makeFolder(name):
     try:
         os.makedirs(name)
     except Exception as e:
         pass
 
-
-def colorReduce(img):  # credits to @eliezer-bernart: https://stackoverflow.com/questions/5906693/how-to-reduce-the-number-of-colors-in-an-image-with-opencv/20715062#20715062
-    return img // 64 * 64 + 64 // 2
-
-
+'''
+    Purpose: Performs canny and various blurs + filters to extract and return digits.
+    Date: 24/10/2020
+    Author: Jonathan Wright 19779085
+'''
 def extractDigits(path):
     img = cv.imread(path, cv.IMREAD_COLOR)
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)

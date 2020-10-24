@@ -12,7 +12,11 @@ affine_flags = cv.WARP_INVERSE_MAP | cv.INTER_LINEAR
 # https://docs.opencv.org/master/dd/d3b/tutorial_py_svm_opencv.html
 # 16 bins
 
-
+'''
+    Purpose: Deskew img for hog. (Credit to OpenCV docs)
+    Date: 24/10/2020
+    Author: Jonathan Wright 19779085
+'''
 def deskew(img):
     m = cv.moments(img)
     if abs(m['mu02']) < 1e-2:
@@ -22,7 +26,11 @@ def deskew(img):
     img = cv.warpAffine(img, M, (SZ, SZ), flags=affine_flags)
     return img
 
-
+'''
+    Purpose: Run hog against img. (Credit to OpenCV docs)
+    Date: 24/10/2020
+    Author: Jonathan Wright 19779085
+'''
 def hog(img):
     gx = cv.Sobel(img, cv.CV_32F, 1, 0)
     gy = cv.Sobel(img, cv.CV_32F, 0, 1)
@@ -35,7 +43,11 @@ def hog(img):
     hist = np.hstack(hists)     # hist is a 64 bit vector
     return hist
 
-
+'''
+    Purpose: Train using SVM model with a HOG Feature set.
+    Date: 24/10/2020
+    Author: Jonathan Wright 19779085
+'''
 def trainDigits(trainDir):
     start = time.time()
     digits = {}
@@ -63,7 +75,11 @@ def trainDigits(trainDir):
     end = time.time()
     print("Completed training on SVM model in {} seconds.".format(end - start))
 
-
+'''
+    Purpose: Run validation set (times + outputs)
+    Date: 24/10/2020
+    Author: Jonathan Wright 19779085
+'''
 def validation(validationDir, output):  # sort out the output name eventually.
     if not os.path.isfile("./digits.dat"):
         raise Exception("SVM Model needs to be trained.")
@@ -97,7 +113,11 @@ def validation(validationDir, output):  # sort out the output name eventually.
     print("Completed validation in {} seconds.\nAccuracy On Validation Data (Expect 100% as its not unseen data): {}".format(
         end - start, accuracy))
 
-
+'''
+    Purpose: Run test suite (Times + Outputsa)
+    Date: 24/10/2020
+    Author: Jonathan Wright 19779085
+'''
 def test(testDir, outputDir, debug):  # 28 x 40
     start = time.time()
     print('Running Tests...')

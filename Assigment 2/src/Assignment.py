@@ -4,7 +4,15 @@ import cv2 as cv
 from Training import trainDigits, validation, test
 from Utils import makeFolder
 
-
+'''
+    Purpose: Entry point for program,
+    -td trains digits
+    -vd validates digits
+    -t runs test.
+    -d enables debugging
+    Date: 24/10/2020
+    Author: Jonathan Wright 19779085
+'''
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-td", '--train_digits',
@@ -32,6 +40,10 @@ def main():
     if args.test:
         test(args.test, args.output, args.debug)
 
-
+'''
+    Purpose: Call main.
+    Date: 24/10/2020
+    Author: Jonathan Wright 19779085
+'''
 if __name__ == "__main__":
     main()
