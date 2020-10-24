@@ -113,7 +113,7 @@ def test(testDir, outputDir, debug):  # 28 x 40
             z = re.search("(\d+)(\.(.+))\Z", image)[1]
             cv.imwrite('{}/DetectedArea{}.jpg'.format(outputDir, z), digits[1])
             with open("{}/BoundingBox{}.txt".format(outputDir, z), 'w') as f:
-                f.write("{} x, {} y, {} w, {} h".format(str(digits[2][0]), str(
+                f.write("{},{},{},{}".format(str(digits[2][0]), str(
                     digits[2][1]), str(digits[2][2]), str(digits[2][3])))
             if debug:
                 test = cv.rectangle(cv.imread(image), (digits[2][0], digits[2][1]), (
