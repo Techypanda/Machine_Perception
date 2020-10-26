@@ -80,6 +80,7 @@ def extractDigits(path):
                     (w2, h2)
                 )
             )
+            img = cv.rectangle(img, (xPos, yPos), (xPos + w2, yPos + h2), (255, 0, 0))
         detected.sort(key=lambda x: x[0][0])
         targets = []
         total_width = 0
@@ -156,6 +157,7 @@ def extractDigits(path):
                 (w, h)
             )
         )
+        img = cv.rectangle(img, (x, y), (x + w, y + h), (255,0,0))
 
     contours.sort(key=lambda cnt: cnt[0][0])
     targets = []
