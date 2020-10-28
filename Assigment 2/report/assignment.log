@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.26)  25 OCT 2020 04:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.9.26)  25 OCT 2020 17:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -283,7 +283,26 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count278
 \l__pdf_internal_box=\box53
-) (y:/machien perception/Machine_Perception/Assigment 2/report/assignment.aux)
+) (y:/machien perception/Machine_Perception/Assigment 2/report/assignment.aux
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+
+LaTeX Warning: Label `fig' multiply defined.
+
+)
 \openout1 = `assignment.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
@@ -330,23 +349,71 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 \c@lstlisting=\count285
-LaTeX Font Info:    Trying to load font information for U+msa on input line 105.
- (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 105.
- (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-<godihatemp.PNG, id=1, 731.73375pt x 93.34875pt>
-File: godihatemp.PNG Graphic file (type png)
-<use godihatemp.PNG>
-Package pdftex.def Info: godihatemp.PNG  used on input line 114.
-(pdftex.def)             Requested size: 365.86598pt x 46.67426pt.
+<blur.png, id=1, 215.80624pt x 187.70125pt>
+File: blur.png Graphic file (type png)
+<use blur.png>
+Package pdftex.def Info: blur.png  used on input line 88.
+(pdftex.def)             Requested size: 107.90285pt x 93.85039pt.
+<edges.png, id=2, 215.80624pt x 187.70125pt>
+File: edges.png Graphic file (type png)
+<use edges.png>
+Package pdftex.def Info: edges.png  used on input line 96.
+(pdftex.def)             Requested size: 107.90285pt x 93.85039pt.
+<morph.png, id=3, 215.80624pt x 187.70125pt>
+File: morph.png Graphic file (type png)
+<use morph.png>
+Package pdftex.def Info: morph.png  used on input line 105.
+(pdftex.def)             Requested size: 107.90285pt x 93.85039pt.
+<contours.png, id=4, 215.80624pt x 187.70125pt>
+File: contours.png Graphic file (type png)
+<use contours.png>
+Package pdftex.def Info: contours.png  used on input line 112.
+(pdftex.def)             Requested size: 107.90285pt x 93.85039pt.
  [1{c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <y:/machien perception/Machine_Perception/Assigment 2/report/godihatemp.PNG>] (c:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
+ <y:/machien perception/Machine_Perception/Assigment 2/report/blur.png (PNG copy)> <y:/machien perception/Machine_Perception/Assigment 2/report/edges.png (PNG copy)> <y:/machien perception/Machine_Perception/Assigment 2/report/morph.png (PNG copy)> <y:/machien perception/Machine_Perception/Assigment 2/report/contours.png (PNG copy)>]
+<filtered.png, id=14, 215.80624pt x 187.70125pt>
+File: filtered.png Graphic file (type png)
+<use filtered.png>
+Package pdftex.def Info: filtered.png  used on input line 124.
+(pdftex.def)             Requested size: 107.90285pt x 93.85039pt.
+<DetectedArea08.jpg, id=15, 241.90375pt x 113.42375pt>
+File: DetectedArea08.jpg Graphic file (type jpg)
+<use DetectedArea08.jpg>
+Package pdftex.def Info: DetectedArea08.jpg  used on input line 134.
+(pdftex.def)             Requested size: 120.95157pt x 56.71173pt.
+<DetectedArea09.jpg, id=16, 98.3675pt x 46.1725pt>
+File: DetectedArea09.jpg Graphic file (type jpg)
+<use DetectedArea09.jpg>
+Package pdftex.def Info: DetectedArea09.jpg  used on input line 134.
+(pdftex.def)             Requested size: 49.18361pt x 23.08618pt.
+<DetectedArea10.jpg, id=17, 80.3pt x 80.3pt>
+File: DetectedArea10.jpg Graphic file (type jpg)
+<use DetectedArea10.jpg>
+Package pdftex.def Info: DetectedArea10.jpg  used on input line 136.
+(pdftex.def)             Requested size: 40.14989pt x 40.14989pt.
+<DetectedArea11.jpg, id=18, 124.465pt x 66.2475pt>
+File: DetectedArea11.jpg Graphic file (type jpg)
+<use DetectedArea11.jpg>
+Package pdftex.def Info: DetectedArea11.jpg  used on input line 136.
+(pdftex.def)             Requested size: 62.23235pt x 33.12366pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 143.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 143.
+ (c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<godihatemp.PNG, id=19, 731.73375pt x 93.34875pt>
+File: godihatemp.PNG Graphic file (type png)
+<use godihatemp.PNG>
+Package pdftex.def Info: godihatemp.PNG  used on input line 152.
+(pdftex.def)             Requested size: 365.86598pt x 46.67426pt.
+ [2
+
+ <y:/machien perception/Machine_Perception/Assigment 2/report/filtered.png (PNG copy)> <y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea08.jpg> <y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea09.jpg> <y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea10.jpg> <y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea11.jpg> <y:/machien perception/Machine_Perception/Assigment 2/report/godihatemp.PNG>] (c:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (y:/machien perception/Machine_Perception/Assigment 2/report/../src/Assignment.py
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 9.
@@ -359,33 +426,33 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/b/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 31.
-) [2
+) [3
 
 
-] [3] (y:/machien perception/Machine_Perception/Assigment 2/report/../src/Training.py
+] [4] (y:/machien perception/Machine_Perception/Assigment 2/report/../src/Training.py
 LaTeX Font Info:    Trying to load font information for OML+ptm on input line 22.
  (c:/texlive/2020/texmf-dist/tex/latex/psnfss/omlptm.fd
 File: omlptm.fd 
 )
 LaTeX Font Info:    Font shape `OML/ptm/b/n' in size <10> not available
 (Font)              Font shape `OML/cmm/b/it' tried instead on input line 22.
- [4
+ [5
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
+ [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6]) [7] (y:/machien perception/Machine_Perception/Assigment 2/report/../src/Utils.py [8
+ [7]) [8] (y:/machien perception/Machine_Perception/Assigment 2/report/../src/Utils.py [9
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9]
+ [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10])
+ [11])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -397,20 +464,24 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[11] (y:/machien perception/Machine_Perception/Assigment 2/report/assignment.aux) ) 
+[12] (y:/machien perception/Machine_Perception/Assigment 2/report/assignment.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 7154 strings out of 480875
- 101581 string characters out of 5911456
- 727653 words of memory out of 5000000
- 22673 multiletter control sequences out of 15000+600000
+ 7210 strings out of 480875
+ 102492 string characters out of 5911456
+ 728185 words of memory out of 5000000
+ 22718 multiletter control sequences out of 15000+600000
  570269 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,8n,42p,303b,1683s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2020/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "y:/machien perception/Machine_Perception/Assigment 2/report/assignment.pdf" (11 pages, 155499 bytes).
+Output written on "y:/machien perception/Machine_Perception/Assigment 2/report/assignment.pdf" (12 pages, 368808 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

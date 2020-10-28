@@ -84,21 +84,59 @@ For Digit Detection and Segmentation I have a series of steps, I will list them 
 \subsection{Step 1 - Gaussian Blur}
 Before I begin trying to extract the images I attempt to blur out as much useless information I can i.e the background,
 I found through trial and error optimal values that work for most images to remove almost all useless detected features.
+\begin{figure}[!htbp]
+    \centerline{{\includegraphics[width=30mm, scale=0.5]{blur.png}}}
+    \caption{Blurred Image}
+    \label{fig}
+\end{figure}
 \subsection{Step 2 - Canny Edge Detection}
 After blurring the image I use Canny Edge Detection to attempt to detect the edges of the plate or numbers, again through
 trial and error I found optimal values that work for most images to remove useless edges.
+\begin{figure}[!htbp]
+    \centerline{{\includegraphics[width=30mm, scale=0.5]{edges.png}}}
+    \caption{Canny Edge Detection}
+    \label{fig}
+\end{figure}
 \subsection{Step 3 - Image Morphological Transformations}
 To make certain features more detectable and remove some I used image morphs specifically I first closed the image alot to
 make the numbers appear bigger and I also dilated on y more than x to extend them so I could detect them better. Again trial
 and error was involved to find optimal values for dilating and closing.
+\begin{figure}[!htbp]
+    \centerline{{\includegraphics[width=30mm, scale=0.5]{morph.png}}}
+    \caption{Image Morph's Applied On Canny (Close, followed by Dilate)}
+    \label{fig}
+\end{figure}
 \subsection{Step 4 - Find All Contours In Detected Edges}
 Using OpenCV's findContours() method all edges were converted to contours, this will return all the edges areas and x ys.
+\begin{figure}[!htbp]
+    \centerline{{\includegraphics[width=30mm, scale=0.5]{contours.png}}}
+    \caption{Contours Detected In Image}
+    \label{fig}
+\end{figure}
+\clearpage
 \subsection{Step 5 - Filtering}
 Various filters were used in this step, firstly a area filter is used i.e if the area is too small I disregard it as its
 likely not a number. Then I filter by how tall the numbers are or how wide, and I also filter by height width ratio and width
 height ratio.
 Then after filtering by those I group the contours into pairs, if pairs are found I select these over any other contours.
 Finally the contours are returned and this works for all validation images and only 4 training images failed testing.
+\begin{figure}[!htbp]
+    \centerline{{\includegraphics[width=30mm, scale=0.5]{filtered.png}}}
+    \caption{Remaining Contours Detected In Image}
+    \label{fig}
+\end{figure}
+\subsection{Step 6 - Returning Bounding Box And Building Numbers}
+Finally, from the contours remaining I know they are numbers so I simply combined the widths to the first detected contour
+on the x and this gives me the bounding box, I return the number plate and feed the individual numbers into my SVM.
+Below is some example results from testing.
+\begin{figure}[!htbp]
+    \centerline{{\includegraphics[width=30mm, scale=0.5]{DetectedArea08.jpg}}
+    {\includegraphics[width=30mm, scale=0.5]{DetectedArea09.jpg}}}
+    \centerline{{\includegraphics[width=16mm, scale=0.5]{DetectedArea10.jpg}}
+    {\includegraphics[width=30mm, scale=0.5]{DetectedArea11.jpg}}}
+    \caption{Results from testing: SVM reads as left to right (100, 302, 32, 420)}
+    \label{fig}
+\end{figure}
 
 \section{Performance Of Program}
 \subsection{Big O Notation Of Program}

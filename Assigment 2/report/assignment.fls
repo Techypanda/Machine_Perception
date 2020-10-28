@@ -113,117 +113,6 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
 INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
-OUTPUT y:/machien perception/Machine_Perception/Assigment 2/report/assignment.pdf
-OUTPUT y:/machien perception/Machine_Perception/Assigment 2/report/assignment.log
-INPUT y:/machien perception/Machine_Perception/Assigment 2/report/IEEEtran.cls
-INPUT y:/machien perception/Machine_Perception/Assigment 2/report/IEEEtran.cls
-INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-INPUT c:/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmbi7t.tfm
-INPUT c:/texlive/2020/texmf-dist/tex/latex/cite/cite.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/cite/cite.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/algorithms/algorithmic.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/algorithms/algorithmic.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/base/ifthen.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT c:/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/base/textcomp.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/xcolor/xcolor.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-cfg/color.cfg
-INPUT c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/calc.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-INPUT c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
-INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pppdftex.def
-INPUT c:/texlive/2020/texmf-dist/tex/latex/pdfpages/pppdftex.def
-INPUT c:/texlive/2020/texmf-dist/tex/latex/txfonts/t1txtt.fd
-INPUT c:/texlive/2020/texmf-dist/tex/latex/txfonts/t1txtt.fd
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/txfonts/t1xbtt.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/txfonts/t1xtt.tfm
-INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstmisc.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
-INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/listings.cfg
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT y:/machien perception/Machine_Perception/Assigment 2/report/assignment.aux
@@ -240,22 +129,19 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
-INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT y:/machien perception/Machine_Perception/Assigment 2/report/godihatemp.PNG
-INPUT y:/machien perception/Machine_Perception/Assigment 2/report/godihatemp.PNG
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/blur.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/blur.png
 OUTPUT y:/machien perception/Machine_Perception/Assigment 2/report/assignment.pdf
-INPUT y:/machien perception/Machine_Perception/Assigment 2/report/godihatemp.PNG
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/blur.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/edges.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/edges.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/edges.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/morph.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/morph.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/morph.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/contours.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/contours.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/contours.png
 INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT c:/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map
@@ -274,6 +160,36 @@ INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/filtered.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/filtered.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/filtered.png
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea08.jpg
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea08.jpg
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea08.jpg
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea09.jpg
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea09.jpg
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea09.jpg
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea10.jpg
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea10.jpg
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea10.jpg
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea11.jpg
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea11.jpg
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/DetectedArea11.jpg
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/godihatemp.PNG
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/godihatemp.PNG
+INPUT y:/machien perception/Machine_Perception/Assigment 2/report/godihatemp.PNG
 INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT y:/machien perception/Machine_Perception/Assigment 2/report/../src/Assignment.py

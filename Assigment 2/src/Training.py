@@ -50,13 +50,49 @@ def hog(img):
 '''
 def trainDigits(trainDir):
     start = time.time()
-    digits = {}
+    digits = { "0": [], "1": [], "2": [], "3": [], "4": [], "5": [], "6": [], "7": [], "8": [], "9": [] }
     for dirpath, dirnames, filenames in os.walk(trainDir):
         if len(filenames) > 0:
-            digits[dirpath[-1]] = []  # [0 - 9] = ... ROWS
-            for image in filenames:
-                image = cv.imread(dirpath + "/" + image, 0)
-                digits[dirpath[-1]].append(hog(deskew(image)))
+            if "0" in dirpath:
+                for image in filenames:
+                    image = cv.imread(dirpath + "/" + image, 0)
+                    digits["0"].append(hog(deskew(image)))
+            elif "1" in dirpath:
+                for image in filenames:
+                    image = cv.imread(dirpath + "/" + image, 0)
+                    digits["1"].append(hog(deskew(image)))
+            elif "2" in dirpath:
+                for image in filenames:
+                    image = cv.imread(dirpath + "/" + image, 0)
+                    digits["2"].append(hog(deskew(image)))
+            elif "3" in dirpath:
+                for image in filenames:
+                    image = cv.imread(dirpath + "/" + image, 0)
+                    digits["3"].append(hog(deskew(image)))
+            elif "4" in dirpath:
+                for image in filenames:
+                    image = cv.imread(dirpath + "/" + image, 0)
+                    digits["4"].append(hog(deskew(image)))
+            elif "5" in dirpath:
+                for image in filenames:
+                    image = cv.imread(dirpath + "/" + image, 0)
+                    digits["5"].append(hog(deskew(image)))
+            elif "6" in dirpath:
+                for image in filenames:
+                    image = cv.imread(dirpath + "/" + image, 0)
+                    digits["6"].append(hog(deskew(image)))
+            elif "7" in dirpath:
+                for image in filenames:
+                    image = cv.imread(dirpath + "/" + image, 0)
+                    digits["7"].append(hog(deskew(image)))
+            elif "8" in dirpath:
+                for image in filenames:
+                    image = cv.imread(dirpath + "/" + image, 0)
+                    digits["8"].append(hog(deskew(image)))
+            elif "9" in dirpath:
+                for image in filenames:
+                    image = cv.imread(dirpath + "/" + image, 0)
+                    digits["9"].append(hog(deskew(image)))
     labels = []
     train_data = []
     for key, val in digits.items():
